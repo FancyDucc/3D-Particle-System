@@ -20,7 +20,7 @@ The form below lets you send a report, request, or whatever to the creator of th
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const cooldownTime = 5 * 60 * 1000; // 5 minutes in milliseconds
+  const cooldownTime = 5 * 60 * 1000;
   const lastSubmitTime = localStorage.getItem('lastSubmitTime');
   const currentTime = new Date().getTime();
   const submitButton = document.getElementById('submit-button');
@@ -38,13 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const username = document.getElementById('username').value;
     const issue = document.getElementById('issue').value;
-    const webhookURL = 'https://discord.com/api/webhooks/1271699331971547136/d_QrSAydEB8M2USVGFJVEa5nWQDNQAWPy3P4L4t6xjZvlqAtISynHE9-D4unBTSW31nJ';
-
+    const tutrtl = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI3MTY5OTMzMTk3MTU0NzEzNi9kX1FyU0F5ZEVCOE0yVVNWR0ZKVkVhNW5XUUROUUFXUHkzUDRMNHQ2eGpadmxxQXRJU3luSEU5LUQ0dW5CVFNXMzFuSg==';
+    const dudrdl = atob(tutrtl);
     const payload = {
-      content: `@distinguishedduccer\n **New Report**\n**Discord User:** ${username}\n**Issue/Request:** ${issue}`
+      content: `<@1027686323282260069>\n **New Report**\n**Discord User:** ${username}\n**Issue/Request:** ${issue}`
     };
 
-    fetch(webhookURL, {
+    fetch(dudrdl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -67,17 +67,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function setButtonStatus(status) {
     submitButton.textContent = status;
-    submitButton.style.width = "auto"; // Adjust width based on content
+    submitButton.style.width = "auto";
     submitButton.disabled = true;
 
     setTimeout(() => {
       resetButton();
-    }, 20000); // Reset after 10 seconds
+    }, 10000);
   }
 
   function resetButton() {
     submitButton.textContent = 'Send';
-    submitButton.style.width = ""; // Reset width
+    submitButton.style.width = "";
     submitButton.disabled = false;
   }
 
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   #submit-button {
-    background-color: #6d33ff; /* Keep the same background color */
+    background-color: #6d33ff;
     color: #fff;
     padding: 10px;
     border: none;

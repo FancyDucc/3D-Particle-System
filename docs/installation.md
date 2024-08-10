@@ -6,18 +6,21 @@ Getting started with the 3D Particle Emitter is very easy and straightforward, s
 
 First, you’ll need to download the `.rbxm` file that contains the 3D Particle Emitter module.
 
-[Download the 3D Particle Emitter Module](#) <!-- Replace the # with the actual download link -->
+[Download the 3D Particle Emitter Module](https://cdn.discordapp.com/attachments/1050692006738927616/1271799868603629692/ParticleEmitter3D.rbxm?ex=66b8a76d&is=66b755ed&hm=bd12ecf81781dc7387bf4c610192b75d43d4a4aebb513de44c87a4aa71c4413d&)
 
 If you aren't comfortable with downloading the file or you are having troubles downloading it, a different method is to install from the Roblox creator hub, you can install the model from here: 
 
-[Roblox Creator Hub](https://create.roblox.com/store/models)
+[Roblox Creator Hub](https://create.roblox.com/store/asset/18888338285/ParticleEmitter3D)
 
 ## **Step 2: Insert the Module into Your Project**
 
 Once you’ve downloaded the module, open up your Roblox Studio experience. You can place the module in either **ReplicatedStorage** or **ServerScriptService**, depending on your experience needs. Here’s how to do it:
 
 1. **Drag and Drop**: Simply drag the downloaded `.rbxm` file from your file explorer into the **Viewport** panel (The area where you can see the game world) in Roblox Studio.
-2. **Placement**: Place the module in **ReplicatedStorage** if you want it to be accessible to both server and client scripts. If it's only going to be used server-side, **ServerScriptService** is the best spot for it.
+
+2. **Click and use**: If you instead installed through the Roblox Creator Hub, you'll find the module in the Toolbox > My Models > ParticleEmitter3D, simply drag and drop or click on the panel and the module will add to the game.
+
+3. **Placement**: Place the module in **ReplicatedStorage** if you want it to be accessible to both server and client scripts. If it's only going to be used server-side, **ServerScriptService** is the best spot for it.
 
 !!! note
     The module is recommended to be placed in the **ReplicatedStorage** and for most particles to be used on the Client, it's not recommended to use particles on the server as it can cause lag to every player when many particles are in use.

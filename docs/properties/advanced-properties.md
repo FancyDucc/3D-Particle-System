@@ -10,9 +10,9 @@ The system has many other properties that you can use to have even more control 
 - **Default:** `nil`
 - **Example:**
   ```lua
-  local referencePart = workspace:WaitForChild("Part") -- Replace with a part or model
+  local reference = workspace:WaitForChild("Part") -- Replace with a part or model
   emitter:Create({ -- Particles will reference this object
-      ReferenceObject = referencePart
+      ReferenceObject = reference
   })
   ```
 
