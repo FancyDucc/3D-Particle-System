@@ -1,0 +1,207 @@
+# Basic Properties
+
+The 3D Particle Emitter system comes with many properties that you can adjust to create particle effects. Below are the basic properties that you can change, along with a brief description of what each one does and how to use them.
+
+## **Acceleration**
+
+- **Description:** Controls the acceleration applied to particles, allowing them to speed up or slow down over time.
+- **Default:** `Vector3.new(0, 0, 0)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will accelerate downward like gravity
+      Acceleration = Vector3.new(0, -10, 0)
+  })
+  ```
+
+## **Color**
+
+- **Description:** Sets the color of the particles. You can also use `ColorSequence` or `ColorSequenceKeypoint` to make particles change color over their lifetime.
+- **Default:** `Color3.fromRGB(255, 255, 255)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles transition from red to yellow
+      Color = ColorSequence.new(Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 255, 0))
+  })
+  ```
+  ```lua
+  emitter:Create({ -- Particles transition from yellow to blue to green to red to white
+      Color = ColorSequence.new({
+		ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 235, 156)),
+		ColorSequenceKeypoint.new(0.25, Color3.fromRGB(110, 137, 255)),
+		ColorSequenceKeypoint.new(0.5, Color3.fromRGB(46, 255, 203)),
+		ColorSequenceKeypoint.new(0.75, Color3.fromRGB(255, 129, 131)),
+		ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
+	})
+  })
+  ```
+
+## **Drag**
+
+- **Description:** Applies drag to the particles, slowing them down over time.
+- **Default:** `0`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will gradually slow down as they move
+      Drag = 0.5
+  })
+  ```
+
+## **EmissionDirection**
+
+- **Description:** Control's which direction the particles emit from the emitter.
+- **Default:** `Enum.NormalId.Top`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will emit right from the emitter
+      EmissionDirection = Enum.NormalId.Right
+  })
+  ```
+
+!!! bug "EmissionDirection not local"
+    Coming from the creator himself, the emission direction does NOT work local to the emitter and I cannot for the life of me figure out how to fix it, so... sorry :/
+
+## **Lifetime**
+
+- **Description:** Defines how long particles will live before disappearing. This can be set as a `NumberRange` for varied lifetimes or `Single` for determined lifetime.
+- **Default:** `NumberRange.new(5, 10)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles live between 3 to 5 seconds
+      Lifetime = NumberRange.new(3, 5)
+  })
+  ```
+  ```lua
+  emitter:Create({ -- Particles live for 5 seconds
+      Lifetime = 5
+  })
+  ```
+
+## **Shape**
+
+- **Description:** The shape of each particle when not using `ReferenceObject`
+- **Default:** `Enum.PartType.Block`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will emit as spheres
+      Shape = Enum.PartType.Ball
+  })
+  ```
+
+## **Material**
+
+- **Description:** The material of each particle when not using `ReferenceObject`
+- **Default:** `Enum.Material.SmoothPlastic`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will glow
+      Material = Enum.Material.Neon
+  })
+  ```
+
+
+## **Rate**
+
+- **Description:** Determines how many particles are emitted per second.
+- **Default:** `5`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Emit 10 particles per second
+      Rate = 10
+  })
+  ```
+
+!!! warning "High rate count"
+
+    It is not a good idea to go above 20 rate without a short lifetime or in bursts, as this can lag a client or the server, depending on what you run it on.
+
+## **Rotation**
+
+- **Description:** Sets the initial rotation of the particles.
+- **Default:** `Vector3.new(0, 0, 0)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles start with a 90 degree rotation on the Y-axis
+      Rotation = Vector3.new(0, 90, 0)
+  })
+  ```
+
+## **RotationSpeed**
+
+- **Description:** Defines the speed at which particles rotate over their lifetime.
+- **Default:** `Vector3.new(0, 0, 0)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles rotate at 10 degrees per second around the Y-axis
+      RotationSpeed = Vector3.new(0, 10, 0)
+  })
+  ```
+
+## **Size**
+
+- **Description:** Sets the size of the particles. You can use `NumberSequence` or `NumberSequenceKeypoint` to make particles grow or shrink over time.
+- **Default:** `NumberSequence.new(1)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles grow in size from 1 to 2 over their lifetime
+      Size = NumberSequence.new(1, 2)
+  })
+  ```
+  ```lua
+  emitter:Create({ -- Particles grow and shrink in size over their lifetime
+	Size = NumberSequence.new({
+		NumberSequenceKeypoint.new(0, 1.25),
+		NumberSequenceKeypoint.new(0.25, 0.4),
+		NumberSequenceKeypoint.new(0.5, 1.3),
+		NumberSequenceKeypoint.new(0.75, 2),
+		NumberSequenceKeypoint.new(1, 0),
+	})
+  })
+  ```
+
+## **Speed**
+
+- **Description:** Controls the speed at which particles are emitted.
+- **Default:** `NumberRange.new(5)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles emit with a random speed between 5 and 10
+      Speed = NumberRange.new(5, 10)
+  })
+  ```
+
+## **SpreadAngle**
+
+- **Description:** Determines the angle at which particles are emitted at X and Z values, giving you more directional control.
+- **Default:** `Vector2.new(0, 0)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles spread at angles between 15 and 30 degrees
+      SpreadAngle = Vector2.new(15, 30)
+  })
+  ```
+
+## **Transparency**
+
+- **Description:** Sets the transparency of the particles. You can use `NumberSequence` or `NumberSequenceKeypoint` to change transparency over time.
+- **Default:** `NumberSequence.new(0)`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles fade out over their whole lifetime
+      Transparency = NumberSequence.new(0, 1) 
+  })
+  ```
+  ```lua
+  emitter:Create({ -- Particles flicker on and off over their whole lifetime
+	Transparency = NumberSequence.new({
+		NumberSequenceKeypoint.new(0, 0),
+		NumberSequenceKeypoint.new(0.25, 1),
+		NumberSequenceKeypoint.new(0.5, 0),
+		NumberSequenceKeypoint.new(0.75, 1),
+		NumberSequenceKeypoint.new(1, 0),
+	})
+  })
+  ```
+
+---
+
+These are the basic properties you can tweak to get started with the 3D Particle Emitter. Experiment with different values and combinations to create unique effects tailored to your game.

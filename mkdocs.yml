@@ -1,0 +1,79 @@
+site_name: 3D Particle Emitter Documentation
+site_url: https://fancyducc.com/3DParticleSystem
+
+plugins:
+  - offline
+
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+    - navigation.indexes
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - navigation.path
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  palette:
+    # dark
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/lightbulb
+        name: Toggle Light Mode
+
+    # light
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/lightbulb-outline
+        name: Toggle Dark Mode
+
+  font:
+    code: Roboto Mono
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+extra_javascript:
+  - javascripts/extra.js
+
+nav:
+  - Home: getting-started.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Properties:
+      - Basic Properties: properties/basic-properties.md
+      - Advanced Properties: properties/advanced-properties.md
+      - Audio Properties: properties/audio.md
+      - Light Properties: properties/light.md
+      - Collision Properties: properties/collision.md
+      - Trajectory Properties: properties/trajectory.md
+      - Instability Properties: properties/instability.md
+      - Function Properties: properties/event-functions.md
+  - Prerequisites:
+      - Part Cache: prerequisites/partcache.md
+  - Free Templates: templatelist.md
+  - Report an Issue: reportbugrequest.md
