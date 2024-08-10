@@ -1,0 +1,1061 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://fancyducc.com/3DParticleSystem/properties/basic-properties.html">
+      
+      
+        <link rel="prev" href="../usage.html">
+      
+      
+        <link rel="next" href="advanced-properties.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Basic Properties - 3D Particle Emitter Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#basic-properties" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="3D Particle Emitter Documentation" class="md-header__button md-logo" aria-label="3D Particle Emitter Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            3D Particle Emitter Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Basic Properties
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Toggle Light Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Toggle Light Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Toggle Dark Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Toggle Dark Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="3D Particle Emitter Documentation" class="md-nav__button md-logo" aria-label="3D Particle Emitter Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    3D Particle Emitter Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Properties
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Properties
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Basic Properties
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="basic-properties.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Basic Properties
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acceleration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceleration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emissiondirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      EmissionDirection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lifetime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lifetime
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rotation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rotationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      RotationSpeed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Size
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spreadangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      SpreadAngle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transparency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparency
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced-properties.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="audio.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="light.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Light Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="collision.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collision Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trajectory.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trajectory Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="instability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instability Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="event-functions.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Prerequisites
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Prerequisites
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prerequisites/partcache.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Part Cache
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../templatelist.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Free Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reportbugrequest.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Report an Issue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="basic-properties">Basic Properties</h1>
+<p>The 3D Particle Emitter system comes with many properties that you can adjust to create particle effects. Below are the basic properties that you can change, along with a brief description of what each one does and how to use them.</p>
+<h2 id="acceleration"><strong>Acceleration</strong></h2>
+<ul>
+<li><strong>Description:</strong> Controls the acceleration applied to particles, allowing them to speed up or slow down over time.</li>
+<li><strong>Default:</strong> <code>Vector3.new(0, 0, 0)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles will accelerate downward like gravity</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">Acceleration</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="color"><strong>Color</strong></h2>
+<ul>
+<li><strong>Description:</strong> Sets the color of the particles. You can also use <code>ColorSequence</code> or <code>ColorSequenceKeypoint</code> to make particles change color over their lifetime.</li>
+<li><strong>Default:</strong> <code>Color3.fromRGB(255, 255, 255)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles transition from red to yellow</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">Color</span> <span class="o">=</span> <span class="n">ColorSequence</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">})</span>
+</span></code></pre></div>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles transition from yellow to blue to green to red to white</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">Color</span> <span class="o">=</span> <span class="n">ColorSequence</span><span class="p">.</span><span class="n">new</span><span class="p">({</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>      <span class="n">ColorSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">235</span><span class="p">,</span> <span class="mi">156</span><span class="p">)),</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>      <span class="n">ColorSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">110</span><span class="p">,</span> <span class="mi">137</span><span class="p">,</span> <span class="mi">255</span><span class="p">)),</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>      <span class="n">ColorSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">46</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">203</span><span class="p">)),</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>      <span class="n">ColorSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">131</span><span class="p">)),</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>      <span class="n">ColorSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)),</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  <span class="p">})</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="drag"><strong>Drag</strong></h2>
+<ul>
+<li><strong>Description:</strong> Applies drag to the particles, slowing them down over time.</li>
+<li><strong>Default:</strong> <code>0</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles will gradually slow down as they move</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">Drag</span> <span class="o">=</span> <span class="mf">0.5</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="emissiondirection"><strong>EmissionDirection</strong></h2>
+<ul>
+<li><strong>Description:</strong> Control's which direction the particles emit from the emitter.</li>
+<li><strong>Default:</strong> <code>Enum.NormalId.Top</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles will emit right from the emitter</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">EmissionDirection</span> <span class="o">=</span> <span class="n">Enum</span><span class="p">.</span><span class="n">NormalId</span><span class="p">.</span><span class="n">Right</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<div class="admonition bug">
+<p class="admonition-title">EmissionDirection not local</p>
+<p>Coming from the creator himself, the emission direction does NOT work local to the emitter and I cannot for the life of me figure out how to fix it, so... sorry :/</p>
+</div>
+<h2 id="lifetime"><strong>Lifetime</strong></h2>
+<ul>
+<li><strong>Description:</strong> Defines how long particles will live before disappearing. This can be set as a <code>NumberRange</code> for varied lifetimes or <code>Single</code> for determined lifetime.</li>
+<li><strong>Default:</strong> <code>NumberRange.new(5, 10)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles live between 3 to 5 seconds</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">Lifetime</span> <span class="o">=</span> <span class="n">NumberRange</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">})</span>
+</span></code></pre></div>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles live for 5 seconds</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">Lifetime</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="shape"><strong>Shape</strong></h2>
+<ul>
+<li><strong>Description:</strong> The shape of each particle when not using <code>ReferenceObject</code></li>
+<li><strong>Default:</strong> <code>Enum.PartType.Block</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles will emit as spheres</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="n">Shape</span> <span class="o">=</span> <span class="n">Enum</span><span class="p">.</span><span class="n">PartType</span><span class="p">.</span><span class="n">Ball</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="material"><strong>Material</strong></h2>
+<ul>
+<li><strong>Description:</strong> The material of each particle when not using <code>ReferenceObject</code></li>
+<li><strong>Default:</strong> <code>Enum.Material.SmoothPlastic</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles will glow</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="n">Material</span> <span class="o">=</span> <span class="n">Enum</span><span class="p">.</span><span class="n">Material</span><span class="p">.</span><span class="n">Neon</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="rate"><strong>Rate</strong></h2>
+<ul>
+<li><strong>Description:</strong> Determines how many particles are emitted per second.</li>
+<li><strong>Default:</strong> <code>5</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Emit 10 particles per second</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="n">Rate</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">High rate count</p>
+<p>It is not a good idea to go above 20 rate without a short lifetime or in bursts, as this can lag a client or the server, depending on what you run it on.</p>
+</div>
+<h2 id="rotation"><strong>Rotation</strong></h2>
+<ul>
+<li><strong>Description:</strong> Sets the initial rotation of the particles.</li>
+<li><strong>Default:</strong> <code>Vector3.new(0, 0, 0)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles start with a 90 degree rotation on the Y-axis</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="n">Rotation</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="rotationspeed"><strong>RotationSpeed</strong></h2>
+<ul>
+<li><strong>Description:</strong> Defines the speed at which particles rotate over their lifetime.</li>
+<li><strong>Default:</strong> <code>Vector3.new(0, 0, 0)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles rotate at 10 degrees per second around the Y-axis</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="n">RotationSpeed</span> <span class="o">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="size"><strong>Size</strong></h2>
+<ul>
+<li><strong>Description:</strong> Sets the size of the particles. You can use <code>NumberSequence</code> or <code>NumberSequenceKeypoint</code> to make particles grow or shrink over time.</li>
+<li><strong>Default:</strong> <code>NumberSequence.new(1)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles grow in size from 1 to 2 over their lifetime</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="n">Size</span> <span class="o">=</span> <span class="n">NumberSequence</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">})</span>
+</span></code></pre></div>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles grow and shrink in size over their lifetime</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>  <span class="n">Size</span> <span class="o">=</span> <span class="n">NumberSequence</span><span class="p">.</span><span class="n">new</span><span class="p">({</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.25</span><span class="p">),</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">),</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">),</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>  <span class="p">})</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="speed"><strong>Speed</strong></h2>
+<ul>
+<li><strong>Description:</strong> Controls the speed at which particles are emitted.</li>
+<li><strong>Default:</strong> <code>NumberRange.new(5)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles emit with a random speed between 5 and 10</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="n">Speed</span> <span class="o">=</span> <span class="n">NumberRange</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="spreadangle"><strong>SpreadAngle</strong></h2>
+<ul>
+<li><strong>Description:</strong> Determines the angle at which particles are emitted at X and Z values, giving you more directional control.</li>
+<li><strong>Default:</strong> <code>Vector2.new(0, 0)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles spread at angles between 15 and 30 degrees</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="n">SpreadAngle</span> <span class="o">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="transparency"><strong>Transparency</strong></h2>
+<ul>
+<li><strong>Description:</strong> Sets the transparency of the particles. You can use <code>NumberSequence</code> or <code>NumberSequenceKeypoint</code> to change transparency over time.</li>
+<li><strong>Default:</strong> <code>NumberSequence.new(0)</code></li>
+<li><strong>Example:</strong>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles fade out over their whole lifetime</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    <span class="n">Transparency</span> <span class="o">=</span> <span class="n">NumberSequence</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> 
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">})</span>
+</span></code></pre></div>
+  <div class="language-lua highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">emitter</span><span class="p">:</span><span class="n">Create</span><span class="p">({</span> <span class="c1">-- Particles flicker on and off over their whole lifetime</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>  <span class="n">Transparency</span> <span class="o">=</span> <span class="n">NumberSequence</span><span class="p">.</span><span class="n">new</span><span class="p">({</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>      <span class="n">NumberSequenceKeypoint</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>  <span class="p">})</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="p">})</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<p>These are the basic properties you can tweak to get started with the 3D Particle Emitter. Experiment with different values and combinations to create unique effects tailored to your game.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../usage.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Usage">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Usage
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="advanced-properties.html" class="md-footer__link md-footer__link--next" aria-label="Next: Advanced Properties">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Advanced Properties
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "header.autohide", "announce.dismiss", "navigation.footer", "navigation.indexes", "navigation.expand", "navigation.top", "toc.integrate", "navigation.path", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
