@@ -4,6 +4,8 @@ Oh? Basic properties aren't enough for you? Fine.
 
 The system has many other properties that you can use to have even more control and flexibility over particle effects. These properties let you fine-tune stuff and visual effects that go beyond the basics.
 
+---
+
 ## **ReferenceObject**
 
 - **Description:** Specifies a part or model (yes you heard that right, model) that particles will reference during their lifetime. This is useful for creating effects that follow a specific object.
@@ -16,6 +18,8 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+---
+
 ## **WindAffectsDrag**
 
 - **Description:** Allows wind to effect how particles move around in the world.
@@ -26,6 +30,8 @@ The system has many other properties that you can use to have even more control 
       WindAffectsDrag = true
   })
   ```
+
+---
 
 ## **FaceVelocity**
 
@@ -38,6 +44,8 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+---
+
 ## **ParticleFolder**
 
 - **Description:** Determines the folder where particles are stored in the game hierarchy.
@@ -48,6 +56,8 @@ The system has many other properties that you can use to have even more control 
       ParticleFolder = game.Workspace("Particles")
   })
   ```
+
+---
 
 ## **RandomizedColor**
 
@@ -60,6 +70,8 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+---
+
 ## **LockedToPart**
 
 - **Description:** Keeps particles attached to the part they are emitted from, even if the emitter moves.
@@ -70,6 +82,8 @@ The system has many other properties that you can use to have even more control 
       LockedToPart = true
   })
   ```
+
+---
 
 ## **CastShadow**
 
@@ -82,6 +96,8 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+---
+
 ## **EmitterID**
 
 - **Description:** When specified, any string (a word inside of "quotes") will turn into an ID that is binded to the emitter, which allows you to `Start`, `Stop`, or `Destroy` any emitter from any script, as long as the script is server-sided. ID can be literally anything as long as it is a string.
@@ -93,6 +109,8 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+---
+
 ## **GetEmitterByID**
 
 - **Description:** When called, the variable paired with the function recieves a callback of the emitter, allowing you to `Start`, `Stop`, or `Destroy` any emitter from any script, as long as the script is server-sided
@@ -102,6 +120,8 @@ The system has many other properties that you can use to have even more control 
   local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
   local emitter = ParticleEmitter3D:GetEmitterFromID("EmitterID1") -- Emitter will be set to whatever emitter already exists and is paired with "EmitterID1"
   ```
+
+---
 
 ## **ParticleEmitter2D (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"
@@ -114,6 +134,8 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+---
+
 ## **IsShapeMesh (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"
 - **Description:** When enabled, the part will emit `Mesh` objects instead of regular `Part` objects
@@ -124,6 +146,8 @@ The system has many other properties that you can use to have even more control 
       IsShapeMesh = true
   })
   ```
+
+---
 
 ## **MeshID (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"
@@ -136,6 +160,21 @@ The system has many other properties that you can use to have even more control 
       MeshId = rbxassetid://0
   })
   ```
+  
+---
+
+## **Trail (Deprecated)**
+!!! danger "Deprecated, use `ReferenceObject`"
+- **Description:** When specified, the `Mesh` object will have a `Trail`
+- **Default:** `nil`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will have a trail instance
+      Trail = game.Workspace:FindFirstChild("Trail")
+  })
+  ```
+
+---
 
 ## **TextureID (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"

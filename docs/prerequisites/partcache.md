@@ -4,8 +4,10 @@ The **3D Particle Emitter** module is designed to work  with the **PartCache** m
 
 The **PartCache** module is already included with the **3D Particle Emitter** module, so there's no need for additional downloads or installations. It’s integrated and ready to use as soon as you set up the **3D Particle Emitter**.
 
+---
+
 ## **Download the PartCache Module (Optional)**
 
-If you’re interested in using **PartCache** separately for other projects or want to explore its functionality on its own, you can download it here:
+If you’re interested in using **PartCache** separately for other projects or want to explore its functionality on its own, you can see it here:
 
-[Download the PartCache Module](https://devforum.roblox.com/t/partcache-for-all-your-quick-part-creation-needs/246641)
+[PartCache Module (Devforum)](https://devforum.roblox.com/t/partcache-for-all-your-quick-part-creation-needs/246641)

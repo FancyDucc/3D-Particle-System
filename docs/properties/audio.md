@@ -6,6 +6,8 @@ The system can be customized to react to audio, letting you to create effects th
     
     All audio properties **must** have an `AudioReactive` property paired together or else it simply won't do anything.
 
+---
+
 ## **AudioReactive**
 
 - **Description:** Links a sound object to the particle system, making the particles react to the sound's playback.
@@ -17,6 +19,8 @@ The system can be customized to react to audio, letting you to create effects th
       AudioReactive = sound 
   })
   ```
+
+---
 
 ## **AudioInfluencedColor**
 
@@ -30,6 +34,8 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+---
+
 ## **AudioInfluencedSpeed**
 
 - **Description:** Makes the speed of the particles fluctuate according to the loudness of the audio.
@@ -42,6 +48,8 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+---
+
 ## **AudioInfluencedSize**
 
 - **Description:** Alters the size of the particles in sync with the audio's loudness.
@@ -53,6 +61,8 @@ The system can be customized to react to audio, letting you to create effects th
       AudioInfluencedSize = true
   })
   ```
+
+---
 
 ## **AudioIndependentSpeed**
 
@@ -67,6 +77,8 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+---
+
 ## **AudioIndependentSize**
 
 - **Description:** Similar to `AudioIndependentSpeed`, this keeps the particle size constant, unaffected by the audio, even if `AudioInfluencedSize` is enabled.
@@ -79,6 +91,8 @@ The system can be customized to react to audio, letting you to create effects th
       AudioIndependentSize = true
   })
   ```
+
+---
 
 ## **AudioIndependentColor**
 
@@ -93,6 +107,8 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+---
+
 ## **AudioMultiplierSpeed**
 
 - **Description:** Multiplies the audio's influence on particle speed. This allows you to scale how much the particle speed is affected by the audio.
@@ -106,6 +122,8 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+---
+
 ## **AudioMultiplierSize**
 
 - **Description:** Multiplies the audio's influence on particle size, scaling the effect the audio has on particle size.
@@ -118,6 +136,8 @@ The system can be customized to react to audio, letting you to create effects th
       AudioMultiplierSize = 0.5
   })
   ```
+
+---
 
 ## **HueShift**
 

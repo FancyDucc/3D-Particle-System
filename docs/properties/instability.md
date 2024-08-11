@@ -2,6 +2,8 @@
 
 The system comes with a property list that can allow you to create randomness involving positions.
 
+---
+
 ## **Instability**
 
 - **Description:** Introduces a base level of randomness to the position of particles. This technically is more Intensity than a base level, it is the amount the particle will move in 3D space in studs
@@ -12,6 +14,8 @@ The system comes with a property list that can allow you to create randomness in
       Instability = 2
   })
   ```
+
+---
 
 ## **InstabilityIntensity**
 
@@ -24,6 +28,8 @@ The system comes with a property list that can allow you to create randomness in
       InstabilityIntensity = 12
   })
   ```
+
+---
 
 ## **InstabilitySmoothness**
 

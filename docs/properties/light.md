@@ -1,11 +1,13 @@
 # Light Properties
 
-The 3D Particle Emitter system allows you to control how particles interact with light in your game environment. This has influencing particles with light sources and managing how particles emit light themselves.
+The system allows you to control how particles interact with light in your game environment. This has influencing particles with light sources and managing how particles emit light themselves.
 
 !!! warning "Light Influence Properties are still in development"
 
     You may experience flickering, shadow casting issues, or other visual problems when using light properties. If these happen, maybeee consider turning off shadows or reducing the number of active lights to minimize the impact.
     Most of the flickering and issues happen with shadows in general.
+
+---
 
 ## **LightInfluenceEnabled**
 
@@ -17,6 +19,8 @@ The 3D Particle Emitter system allows you to control how particles interact with
       LightInfluenceEnabled = true
   })
   ```
+
+---
 
 ## **LightBrightnessInfluence**
 
@@ -30,6 +34,8 @@ The 3D Particle Emitter system allows you to control how particles interact with
   })
   ```
 
+---
+
 ## **LightInfluenceSensitivity**
 
 - **Description:** Adjusts the sensitivity of the particles to changes in light. Higher values make particles more reactive to light intensity changes.
@@ -41,6 +47,8 @@ The 3D Particle Emitter system allows you to control how particles interact with
       LightInfluenceSensitivity = 3
   })
   ```
+
+---
 
 ## **LightColorInfluence**
 
@@ -54,6 +62,8 @@ The 3D Particle Emitter system allows you to control how particles interact with
   })
   ```
 
+---
+
 ## **LightEmission**
 
 - **Description:** Sets the brightness of light emitted by the particles themselves. Useful for creating glowing or light-emitting particles. Higher values add more "white" into the color, lower values saturate the color more, **recommended to stay between 0 and 1.**
@@ -66,6 +76,8 @@ The 3D Particle Emitter system allows you to control how particles interact with
   })
   ```
 
+---
+
 ## **EmitLight (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"
 - **Description:** Previously used to make particles emit light. It is now recommended to use the `ManualLightProperties` property for more control and future compatibility.
@@ -76,6 +88,8 @@ The 3D Particle Emitter system allows you to control how particles interact with
       EmitLight = true
   })
   ```
+
+---
 
 ## **ManualLightProperties (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"

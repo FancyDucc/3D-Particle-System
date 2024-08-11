@@ -2,6 +2,17 @@
 
 The system comes with many properties that you can adjust to create particle effects. Below are the basic properties that you can change.
 
+## **Enabled**
+
+- **Description:** Control's whether the particles are emitting or not.
+- **Default:** `true`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will emit
+      Enabled = true
+  })
+  ```
+
 ## **Acceleration**
 
 - **Description:** Controls the acceleration applied to particles, allowing them to speed up or slow down over time.
@@ -56,9 +67,6 @@ The system comes with many properties that you can adjust to create particle eff
       EmissionDirection = Enum.NormalId.Right
   })
   ```
-
-!!! bug "EmissionDirection not local"
-    The EmissionDirection is not currently local and will not follow the direction of the emitter, I am actively trying to fix it.
 
 ## **Lifetime**
 

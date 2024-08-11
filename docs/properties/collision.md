@@ -3,7 +3,20 @@
 The system lets you to control how particles interact with the environment through collision. This part covers properties that manage how particles detect and respond to collisions, whether they bounce, stop, or pass through objects.
 
 !!! warning "Performance heavy"
-    Particles use raycasting to determine when they hit something, this can be laggy, so it's not the best idea to use many particles with collision when going for compatibility on lower-end devices
+    Particles using smart collision use raycasting to determine when they hit something, this can be laggy, so it's not the best idea to use many particles with collision when going for compatibility on lower-end devices
+
+---
+
+## **CanCollide**
+
+- **Description:** Controls if particles are collidable with physics objects, such as players
+- **Default:** `false`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Physics objects will collide with particles
+      CanCollide = true
+  })
+  ```
 
 ## **EnableCollision**
 
@@ -16,6 +29,8 @@ The system lets you to control how particles interact with the environment throu
   })
   ```
 
+---
+
 ## **ParticlesAreSolid**
 
 - **Description:** When enabled, particles will treat itself on collision as a solid object, for example, a bouncy ball is a solid object, while fire is not. When this is false, the particles will spread out around the surface of the hit object, when this is true, the particles will bounce.
@@ -27,6 +42,8 @@ The system lets you to control how particles interact with the environment throu
       ParticlesAreSolid = true
   })
   ```
+
+---
 
 ## **OnCollision**
 

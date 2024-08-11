@@ -2,6 +2,8 @@
 
 The system lets you call custom functions for your needs, whether it be when the particle spawns, is destroyed, reaches half it's lifetime, every frame, or when the particle collides with something paired with `EnableCollision`
 
+---
+
 ## **OnSpawn**
 
 - **Description:** This function is called when a particle is first created or spawned.
@@ -14,6 +16,8 @@ The system lets you call custom functions for your needs, whether it be when the
     end
   })
   ```
+
+---
 
 ## **HalfLife**
 
@@ -28,6 +32,8 @@ The system lets you call custom functions for your needs, whether it be when the
   })
   ```
 
+---
+
 ## **OnDeath**
 
 - **Description:** This function is called when a particle is about to be destroyed or removed.
@@ -41,6 +47,8 @@ The system lets you call custom functions for your needs, whether it be when the
   })
   ```
 
+---
+
 ## **ConstantFunction**
 
 - **Description:** This function is called every frame prior to the frame being rendered.
@@ -53,6 +61,8 @@ The system lets you call custom functions for your needs, whether it be when the
     end
   })
   ```
+
+---
 
 ## **OnCollision**
 

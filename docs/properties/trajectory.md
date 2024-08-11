@@ -2,6 +2,8 @@
 
 The system has properties that allow you to create specific paths for particles to follow. These trajectory properties let you to have effects where particles move along routes, making shapes or traveling through set points in space.
 
+---
+
 ## **TrajectorialVertices**
 
 - **Description:** When this table has at least 1 `Vector3` inside the table, the particles will attempt to move to the position of the `Vector3`, when there are multiple `Vector3`'s in the table, the particles will move from the first, to the second, then back to the first, it will loop.
@@ -17,6 +19,8 @@ The system has properties that allow you to create specific paths for particles 
       }
   })
   ```
+
+---
 
 ## **TrajectorialSmoothening**
 

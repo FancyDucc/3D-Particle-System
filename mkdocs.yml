@@ -1,12 +1,14 @@
 site_name: 3D Particle Emitter Documentation
-site_url: https://fancyducc.com/3DParticleSystem
+site_url: https://fancyducc.github.io/3D-Particle-System/getting-started.html
 
 plugins:
-  - offline
   - search
+  - privacy
 
 theme:
   name: material
+  favicon: images\Logo.png
+  logo: images\Logo.png
   features:
     - content.code.annotate
     - content.code.copy
@@ -75,6 +77,7 @@ nav:
       - Trajectory Properties: properties/trajectory.md
       - Instability Properties: properties/instability.md
       - Function Properties: properties/event-functions.md
+      - Debug Properties: properties/debug-properties.md
   - Prerequisites:
       - Part Cache: prerequisites/partcache.md
   - Free Templates: templatelist.md

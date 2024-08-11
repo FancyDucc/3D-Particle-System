@@ -2,6 +2,8 @@
 
 Now that you have the 3D Particle Emitter installed, let's actually use it. This guide will show you how to set up the emitter and adjust some basic properties to get you started. 
 
+---
+
 ## **Setting Up the Particle Emitter**
 
 First things first, you'll need to create a new script or add to an existing one where you want to use the 3D Particle Emitter.
@@ -22,9 +24,13 @@ emitter:Create({ -- Properties here
 
 In this example, we're requiring the ParticleEmitter3D module and creating a new emitter attached to a part in your workspace. Make sure to replace `"Part"` with the actual name of the part you want to attach the emitter to.
 
+---
+
 ## **Adding Basic Properties**
 
 Once your emitter is set up, you can start customizing it with many properties. Here are some basic ones to get you started:
+
+---
 
 ### **Rate**
 
@@ -36,6 +42,8 @@ emitter:Create({ -- Emit 10 particles per second
 })
 ```
 
+---
+
 ### **Lifetime**
 
 The `Lifetime` property controls how long each particle lives before disappearing. You can set this as a `NumberRange` to give particles a range of lifetimes, if you have a bit of scripting knowledge, then consider `NumberRange` how a `math.random()` works.
@@ -45,6 +53,8 @@ emitter:Create({ -- Particles live between 3 to 5 seconds
     Lifetime = NumberRange.new(3, 5)
 })
 ```
+
+---
 
 ### **Color**
 
@@ -69,6 +79,7 @@ emitter:Create({
 })
 ```
 
+---
 
 ### **Combining Properties**
 
@@ -83,25 +94,29 @@ emitter:Create({
 })
 ```
 So with that, a full script should look something like:
-```lua
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
+??? info "Expand"
+    ```lua
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+    local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
 
-local part = workspace:WaitForChild("Part")
-local emitter = ParticleEmitter3D.new(part)
+    local part = workspace:WaitForChild("Part")
+    local emitter = ParticleEmitter3D.new(part)
 
-emitter:Create({
-    Rate = 15,
-    Lifetime = NumberRange.new(2, 4),
-    Color = ColorSequence.new(Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 0, 255)),
-    Size = NumberSequence.new(1, 2)
-})
-```
+    emitter:Create({
+        Rate = 15,
+        Lifetime = NumberRange.new(2, 4),
+        Color = ColorSequence.new(Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 0, 255)),
+        Size = NumberSequence.new(1, 2)
+    })
+    ```
+
 
 !!! note "Emitters begin enabled"
     All emitters created begin enabled. You'll have to put `Enabled = false` in the `Create({` section or `emitter:Stop()` at the end of the section outside of the brackets if you want the emitter to start disabled.
 
 In this example, particles are emitted at a rate of 15 per second, live between 2 to 4 seconds, change color from green to blue, and grow in size over their lifetime.
+
+---
 
 ## **Activating and Stopping the Emitter**
 
@@ -110,12 +125,26 @@ To start the particle emitter, use:
 ```lua
 emitter:Start()
 ```
+Or
+```lua
+emitter.enabled = true
+```
+It is recommended to use `emitter:Start()` when enabling a particle as it uses a preparation system before turning it on, making sure to minimize any possible crashes or feedback loops.
+
+---
 
 When you want to stop emitting particles, simply use:
 
 ```lua
 emitter:Stop()
 ```
+Or
+```lua
+emitter.enabled = false
+```
+`emitter:Stop()` and `emitter.enabled = false` have no difference, you can use either freely.
+
+---
 
 When you want to destroy the emitter and remove all particles, use:
 
@@ -124,6 +153,13 @@ emitter:Destroy()
 ```
 
 `emitter:Destroy()` will only destroy particles and stop emitting them, you can use `emitter:Start()` to start the same emitter again.
+
+## **Useful things to know**
+
+All properties of emitters can be modified from any script when using `GetEmitterFromID` or anywhere in a script where the emitter is created, the only requirement is that the emitter has those properties used, for example;
+It is not possible to change the `SpreadAngle` of the emitters if `SpreadAngle` is not used in the `emitter:Create({` table.
+
+
 
 ---
 
