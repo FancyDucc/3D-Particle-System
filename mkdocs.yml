@@ -3,6 +3,7 @@ site_url: https://fancyducc.com/3DParticleSystem
 
 plugins:
   - offline
+  - search
 
 theme:
   name: material
@@ -59,7 +60,8 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/extra.js
-
+extra_css:
+  - css/custom.css
 nav:
   - Home: getting-started.md
   - Installation: installation.md
@@ -77,3 +79,4 @@ nav:
       - Part Cache: prerequisites/partcache.md
   - Free Templates: templatelist.md
   - Report an Issue: reportbugrequest.md
+  - License: customprovisionlicense.md
