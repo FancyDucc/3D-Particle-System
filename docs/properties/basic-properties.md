@@ -1,6 +1,6 @@
 # Basic Properties
 
-The 3D Particle Emitter system comes with many properties that you can adjust to create particle effects. Below are the basic properties that you can change, along with a brief description of what each one does and how to use them.
+The system comes with many properties that you can adjust to create particle effects. Below are the basic properties that you can change.
 
 ## **Acceleration**
 
@@ -58,7 +58,7 @@ The 3D Particle Emitter system comes with many properties that you can adjust to
   ```
 
 !!! bug "EmissionDirection not local"
-    Coming from the creator himself, the emission direction does NOT work local to the emitter and I cannot for the life of me figure out how to fix it, so... sorry :/
+    The EmissionDirection is not currently local and will not follow the direction of the emitter, I am actively trying to fix it.
 
 ## **Lifetime**
 
@@ -204,4 +204,4 @@ The 3D Particle Emitter system comes with many properties that you can adjust to
 
 ---
 
-These are the basic properties you can tweak to get started with the 3D Particle Emitter. Experiment with different values and combinations to create unique effects tailored to your game.
+These are the basic properties you can tweak to get started with the 3D Particle Emitter.

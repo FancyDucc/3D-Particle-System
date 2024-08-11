@@ -32,4 +32,4 @@ Software.
 The Software may not be sold on its own or distributed illegaly, in 
 either original or modified form under any circumstance.
 ```
-By downloading this software, you are agreeing to these terms and that this license has/was applied to you.
+By downloading this software, you are agreeing to these terms and acknowledging that this license has/was applied to you.
