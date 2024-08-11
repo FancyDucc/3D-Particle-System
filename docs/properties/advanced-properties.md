@@ -82,6 +82,27 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+## **EmitterID**
+
+- **Description:** When specified, any string (a word inside of "quotes") will turn into an ID that is binded to the emitter, which allows you to `Start`, `Stop`, or `Destroy` any emitter from any script, as long as the script is server-sided. ID can be literally anything as long as it is a string.
+- **Default:** `"Default"`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Emitter will be paired with "EmitterID1"
+      EmitterID = "EmitterID1"
+  })
+  ```
+
+## **GetEmitterByID**
+
+- **Description:** When called, the variable paired with the function recieves a callback of the emitter, allowing you to `Start`, `Stop`, or `Destroy` any emitter from any script, as long as the script is server-sided
+- **Example:**
+  ```lua
+  local ReplicatedStorage = game:GetService("ReplicatedStorage")
+  local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
+  local emitter = ParticleEmitter3D:GetEmitterFromID("EmitterID1") -- Emitter will be set to whatever emitter already exists and is paired with "EmitterID1"
+  ```
+
 ## **ParticleEmitter2D (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"
 - **Description:** When specified, each particle emits their own 2D particle emitter.

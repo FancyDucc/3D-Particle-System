@@ -10,6 +10,9 @@ This system is designed to be able to give you just a bit more control over part
 
 If you’re aiming for effects like fireflies or lightning bolts or audio visualization, this system has you covered.
 
+!!! danger "Notice"
+    <div class="danger-header">3DParticleEmitter is in no way whatsoever meant to replace 2D particles, 2D particles are much more performance friendly and look better for circumstances that need it, 3D Particles are meant to add onto 2D particles or to be used as extra decoration.</div>
+
 ## **Key Features**
 
 Here’s a quick rundown of what makes this particle system special:

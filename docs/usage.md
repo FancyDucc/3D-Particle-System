@@ -82,6 +82,24 @@ emitter:Create({
     Size = NumberSequence.new(1, 2)
 })
 ```
+So with that, a full script should look something like:
+```lua
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
+
+local part = workspace:WaitForChild("Part")
+local emitter = ParticleEmitter3D.new(part)
+
+emitter:Create({
+    Rate = 15,
+    Lifetime = NumberRange.new(2, 4),
+    Color = ColorSequence.new(Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 0, 255)),
+    Size = NumberSequence.new(1, 2)
+})
+```
+
+!!! note "Emitters begin enabled"
+    All emitters created begin enabled. You'll have to put `Enabled = false` in the `Create({` section or `emitter:Stop()` at the end of the section outside of the brackets if you want the emitter to start disabled.
 
 In this example, particles are emitted at a rate of 15 per second, live between 2 to 4 seconds, change color from green to blue, and grow in size over their lifetime.
 
