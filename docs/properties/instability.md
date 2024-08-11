@@ -31,21 +31,4 @@ The system comes with a property list that can allow you to create randomness in
 
 ---
 
-## **InstabilitySmoothness**
-
-!!! warning "`InstabilitySmoothness` doesn't work at the moment"
-    `InstabilitySmoothness` is entirely broken at the moment and won't work, I don't know why D:
-
-- **Description:** Changes how smooth or snappy the instability movement will have, higher values are more smooth and flowy, lower values are more snappy and instant
-- **Default:** `1`
-- **Example:**
-  ```lua
-  emitter:Create({ -- Particles will have smoother movements and look flowy
-      Instability = 2,
-      InstabilitySmoothness = 1
-  })
-  ```
-
----
-
 `Instability` properties allow you to mimic electricity effects or randomness. `Instability` is a useful property when used right.

@@ -64,6 +64,7 @@ extra_javascript:
   - javascripts/extra.js
 extra_css:
   - css/custom.css
+
 nav:
   - Home: getting-started.md
   - Installation: installation.md

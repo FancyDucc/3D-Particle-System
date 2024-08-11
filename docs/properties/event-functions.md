@@ -66,14 +66,16 @@ The system lets you call custom functions for your needs, whether it be when the
 
 ## **OnCollision**
 
-- **Description:** Lets you to use a function that is called whenever a particle collides with an object. This can be used to trigger specific effects, such as particles changing color's on impact or creating explosive rockets/objects.
+- **Description:** Lets you to use a function that is called whenever a particle collides with an object. This function is paired with the velocity that the particle has when the function is called.
 - **Default:** `nil`
 - **Example:**
   ```lua
-  emitter:Create({ -- Print the particle name and "has been destroyed" when called
+  emitter:Create({ -- Destroy the particle on collision if the particle is moving faster than 10 studs per second
     EnableCollision = true,
-    OnCollision = function(particle)
-        particle:Destroy()
+    OnCollision = function(particle, velocity)
+        if velocity.Magnitude > 10 then
+            particle:Destroy()
+        end
     end
   }) 
   ```
