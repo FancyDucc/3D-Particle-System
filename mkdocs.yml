@@ -1,14 +1,13 @@
 site_name: 3D Particle Emitter Documentation
-site_url: https://fancyducc.github.io/3D-Particle-System/getting-started.html
+site_url: https://fancyducc.com/3DParticleSystem
 
 plugins:
   - search
-  - privacy
 
 theme:
   name: material
-  favicon: images\Logo.png
-  logo: images\Logo.png
+  favicon: images/Logo.png
+  logo: images/Logo.png
   features:
     - content.code.annotate
     - content.code.copy
