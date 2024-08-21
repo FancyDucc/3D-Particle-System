@@ -17,7 +17,10 @@ The system has many other properties that you can use to have even more control 
       ReferenceObject = reference
   })
   ```
-
+<video width="600" controls>
+  <source src="../../media/ReferenceObject.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ---
 
 ## **WindAffectsDrag**
@@ -31,6 +34,11 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/WindAffectsDrag.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **FaceVelocity**
@@ -43,6 +51,11 @@ The system has many other properties that you can use to have even more control 
       FaceVelocity = true
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/FaceVelocity.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
@@ -70,6 +83,11 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/RandomizedColor.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **LockedToPart**
@@ -95,6 +113,11 @@ The system has many other properties that you can use to have even more control 
       CastShadow = true
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/CastShadow.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 

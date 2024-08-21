@@ -29,6 +29,12 @@ The system lets you to control how particles interact with the environment throu
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/EnableCollision.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 ---
 
 ## **ParticlesAreSolid**
@@ -43,6 +49,11 @@ The system lets you to control how particles interact with the environment throu
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/ParticlesAreSolid.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **OnCollision**
@@ -53,8 +64,8 @@ The system lets you to control how particles interact with the environment throu
   ```lua
   emitter:Create({ -- Particles will destroy themselves on collision
       EnableCollision = true,
-      OnCollision = function(particle)
-        particle:Destroy()
+      OnCollision = function(particle, velocity)
+        print("Hit with " .. velocity.Magnitude)
       end
   })
   ```

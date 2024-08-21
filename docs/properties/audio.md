@@ -24,6 +24,13 @@ The system can be customized to react to audio, letting you to create effects th
 
 ## **AudioInfluencedColor**
 
+!!! note "Saturation notice"
+    `AudioInfluencedColor` changes the HUE of the color the particle is at spawn, if your particle has no saturation in any color, there will be no visible change.
+
+!!! note "Compatibility"
+    `AudioInfluencedColor` is *NOT* compatible with `ColorSequence`, if your particle has a `ColorSequence` applied, the color will be set to the first keypoint and it will not go through the `ColorSequence` as expected.
+
+
 - **Description:** Allows the color of the particles to change based on the loudness of the linked audio.
 - **Default:** `false`
 - **Example:**
@@ -33,6 +40,11 @@ The system can be customized to react to audio, letting you to create effects th
       AudioInfluencedColor = true
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/AudioInfluenceColor.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
@@ -48,6 +60,11 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/AudioInfluencedSpeed.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **AudioInfluencedSize**
@@ -62,11 +79,16 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/AudioInfluencedSize.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **AudioIndependentSpeed**
 
-- **Description:** When set to true, this property ensures that the particle's speed remains constant and isn't affected by audio fluctuations, even if `AudioInfluencedSpeed` is enabled.
+- **Description:** When set to true, this property makes it that the particle's speed remains constant and isn't affected by audio changes past when it was first created, even if `AudioInfluencedSpeed` is enabled.
 - **Default:** `false`
 - **Example:**
   ```lua
@@ -77,11 +99,16 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/AudioIndependantSpeed.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **AudioIndependentSize**
 
-- **Description:** Similar to `AudioIndependentSpeed`, this keeps the particle size constant, unaffected by the audio, even if `AudioInfluencedSize` is enabled.
+- **Description:** Similar to `AudioIndependentSpeed`, this keeps the particle size constant, unaffected by the audio changes past when the particle was first created, even if `AudioInfluencedSize` is enabled.
 - **Default:** `false`
 - **Example:**
   ```lua
@@ -92,11 +119,16 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/AudioIndependantSize.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **AudioIndependentColor**
 
-- **Description:** This property ensures that the particle color does not change with audio fluctuations, even if `AudioInfluencedColor` is enabled.
+- **Description:** This property makes sure that the particle color does not change with audio changes past when the particle was first created, even if `AudioInfluencedColor` is enabled.
 - **Default:** `false`
 - **Example:**
   ```lua
@@ -107,11 +139,16 @@ The system can be customized to react to audio, letting you to create effects th
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/AudioIndependantColor.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **AudioMultiplierSpeed**
 
-- **Description:** Multiplies the audio's influence on particle speed. This allows you to scale how much the particle speed is affected by the audio.
+- **Description:** Multiplies the audio's influence on particle speed. This allows you to scale how much the particle speed is affected by the audio, can be used with low `Speed` and high `AudioMultiplierSpeed` to increase the visible audio amount.
 - **Default:** `1`
 - **Example:**
   ```lua
@@ -121,6 +158,11 @@ The system can be customized to react to audio, letting you to create effects th
       AudioMultiplierSpeed = 2
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/AudioMultiplierSpeed.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
@@ -133,24 +175,36 @@ The system can be customized to react to audio, letting you to create effects th
   emitter:Create({ -- Lowers the size changes caused by audio loudness by half
       AudioReactive = sound,
       AudioInfluencedSize = true,
-      AudioMultiplierSize = 0.5
+      AudioMultiplierSize = 2
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/AudioMultiplierSize.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 ---
 
-## **HueShift**
+## **AudioHueShift**
 
 - **Description:** Shifts the hue of the particle's color based on the audio's loudness, higher values are more colorful.
-- **Default:** `0`
+- **Default:** `0.15`
 - **Example:**
   ```lua
   emitter:Create({ -- Shifts the hue based on audio loudness
       AudioReactive = sound,
       AudioInfluencedColor = true,
-      HueShift = 0.25
+      HueShift = 1
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/AudioHueShift.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ---
 

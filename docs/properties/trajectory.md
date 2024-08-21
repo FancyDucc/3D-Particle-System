@@ -20,6 +20,11 @@ The system has properties that allow you to create specific paths for particles 
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/TrajectorialVertices.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **TrajectorialSmoothening**
@@ -37,6 +42,16 @@ The system has properties that allow you to create specific paths for particles 
       TrajectorialSmoothening = 0.25
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/TrajectorialSmoothnessHard.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video width="600" controls>
+  <source src="../../media/TrajectorialSmoothnessSoft.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 

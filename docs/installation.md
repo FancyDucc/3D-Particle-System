@@ -29,6 +29,12 @@ Once you’ve downloaded the module, open up your Roblox Studio experience. You 
 !!! note
     The module is recommended to be placed in the **ReplicatedStorage** and for most particles to be used on the Client, it's not recommended to use particles on the server as it can cause lag to every player when many particles are in use.
 
+
+<video width="600" controls>
+  <source src="../../media/DragandDrop.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## **Step 3: Require the Module**

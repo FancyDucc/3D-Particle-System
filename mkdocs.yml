@@ -1,5 +1,5 @@
 site_name: 3D Particle Emitter Documentation
-site_url: https://fancyducc.com/3DParticleSystem
+# site_url: https://fancyducc.com/3DParticleSystem
 
 plugins:
   - search

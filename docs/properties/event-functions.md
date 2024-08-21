@@ -4,6 +4,9 @@ The system lets you call custom functions for your needs, whether it be when the
 
 ---
 
+!!! note "No Video"
+    Videos are not provided with these functions as they are basic and self-explanatory
+
 ## **OnSpawn**
 
 - **Description:** This function is called when a particle is first created or spawned.

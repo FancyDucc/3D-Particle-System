@@ -9,6 +9,9 @@ The system allows you to control how particles interact with light in your game 
 
 ---
 
+!!! note "No Video"
+    No video due to the fact that `LightInfluence` in general is still very under beta.
+
 ## **LightInfluenceEnabled**
 
 - **Description:** Enables the particles to be influenced by the surrounding light sources. When activated, particles can change color and brightness based on the lights in the environment.
@@ -65,7 +68,7 @@ The system allows you to control how particles interact with light in your game 
 ---
 
 ## **LightEmission**
-
+!!! danger "Deprecated, cause its literally just useless lol, just apply different colors onto your particle itself."
 - **Description:** Sets the brightness of light emitted by the particles themselves. Useful for creating glowing or light-emitting particles. Higher values add more "white" into the color, lower values saturate the color more, **recommended to stay between 0 and 1.**
 - **Default:** `0`
 - **Example:**

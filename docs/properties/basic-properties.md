@@ -24,6 +24,11 @@ The system comes with many properties that you can adjust to create particle eff
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/Acceleration.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## **Color**
 
 - **Description:** Sets the color of the particles. You can also use `ColorSequence` or `ColorSequenceKeypoint` to make particles change color over their lifetime.
@@ -57,6 +62,11 @@ The system comes with many properties that you can adjust to create particle eff
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/Drag.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## **EmissionDirection**
 
 - **Description:** Control's which direction the particles emit from the emitter.
@@ -67,6 +77,11 @@ The system comes with many properties that you can adjust to create particle eff
       EmissionDirection = Enum.NormalId.Right
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/EmissionDirection.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## **Lifetime**
 
@@ -95,6 +110,11 @@ The system comes with many properties that you can adjust to create particle eff
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/Shape.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## **Material**
 
 - **Description:** The material of each particle when not using `ReferenceObject`
@@ -106,6 +126,10 @@ The system comes with many properties that you can adjust to create particle eff
   })
   ```
 
+<video width="600" controls>
+  <source src="../../media/Material.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## **Rate**
 
@@ -128,10 +152,15 @@ The system comes with many properties that you can adjust to create particle eff
 - **Default:** `Vector3.new(0, 0, 0)`
 - **Example:**
   ```lua
-  emitter:Create({ -- Particles start with a 90 degree rotation on the Y-axis
-      Rotation = Vector3.new(0, 90, 0)
+  emitter:Create({ -- Particles start with a 45 degree rotation on the Y-axis and Z-axis
+      Rotation = Vector3.new(0, 45, 45)
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/Rotation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## **RotationSpeed**
 
@@ -143,6 +172,11 @@ The system comes with many properties that you can adjust to create particle eff
       RotationSpeed = Vector3.new(0, 10, 0)
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/RotationSpeed.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## **Size**
 
@@ -187,6 +221,11 @@ The system comes with many properties that you can adjust to create particle eff
       SpreadAngle = Vector2.new(15, 30)
   })
   ```
+
+<video width="600" controls>
+  <source src="../../media/SpreadAngle.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## **Transparency**
 

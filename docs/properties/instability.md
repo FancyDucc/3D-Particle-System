@@ -31,4 +31,11 @@ The system comes with a property list that can allow you to create randomness in
 
 ---
 
+<video width="600" controls>
+  <source src="../../media/Instability.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+---
+
 `Instability` properties allow you to mimic electricity effects or randomness. `Instability` is a useful property when used right.
