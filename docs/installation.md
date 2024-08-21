@@ -31,7 +31,7 @@ Once you’ve downloaded the module, open up your Roblox Studio experience. You 
 
 
 <video width="600" controls>
-  <source src="../../media/DragandDrop.mp4" type="video/mp4">
+  <source src="../media/DragandDrop.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

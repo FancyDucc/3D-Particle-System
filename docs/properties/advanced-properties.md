@@ -123,7 +123,7 @@ The system has many other properties that you can use to have even more control 
 
 ## **EmitterID**
 
-- **Description:** When specified, any string (a word inside of "quotes") will turn into an ID that is binded to the emitter, which allows you to `Start`, `Stop`, or `Destroy` any emitter from any script, as long as the script is server-sided. ID can be literally anything as long as it is a string.
+- **Description:** When specified, any string (a word inside of "quotes") will turn into an ID that is binded to the emitter, which allows you to `Start`, `Stop`, or `Destroy` any emitter from any script, as long as the script that remotely interacts with the script is the same `RunContext` as the script that created the emitter, so Client scripts can only remotely control other client emitters, while server scripts can only remotely control other server emitters, they cannot cross. ID can be literally anything as long as it is a string.
 - **Default:** `"Default"`
 - **Example:**
   ```lua

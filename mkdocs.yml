@@ -58,6 +58,9 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - codehilite:
+      guess_lang: false
+      default_lang: lua
 
 extra_javascript:
   - javascripts/extra.js
