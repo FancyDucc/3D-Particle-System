@@ -154,7 +154,7 @@ emitter:Kill()
 
 !!! warning "High rate count"
 
-    It is not a good idea to go above 20 rate without a short lifetime or in bursts, as this can lag a client or the server, depending on what you run it on.
+    It is not a good idea to go above 60 rate without a short lifetime or in bursts, as this can lag a client or the server, depending on what you run it on.
 
 ## **Rotation**
 

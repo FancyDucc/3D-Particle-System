@@ -85,4 +85,20 @@ The system lets you call custom functions for your needs, whether it be when the
 
 ---
 
+## **OnBeat**
+
+- **Description:** A function that is played every beat or hit that the system detects, using `BeatDetectionThreshold` as it's source.
+- **Default:** `0.15`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Prints "Beat" everytime a beat happens
+      AudioReactive = sound,
+      OnBeat = function(particle)
+          print("Beat")
+      end
+  })
+  ```
+
+---
+
 These functions provide hooks into different stages of a particle's lifecycle, giving you the flexibility to create sophisticated effects. By defining custom functions for spawning, mid-life, death, and collision, you can control exactly how your particles behave and interact with the environment.
