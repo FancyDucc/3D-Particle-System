@@ -18,34 +18,34 @@ Don't expect lots of these, most of these templates are made simply from me usin
 ### **Bouncy Balls**
 **Particle Count: `Low`**
 
-**[Download Bouncy Balls Template](downloads\BouncyBalls.rbxm)**
+**[Download Bouncy Balls Template](downloads/BouncyBalls.rbxm)**
 
 ---
 
 ### **Fireflies**
 **Particle Count: `Medium`**
 
-**[Download Fireflies Template](downloads\Fireflies.rbxm)**
+**[Download Fireflies Template](downloads/Fireflies.rbxm)**
 
 ---
 
 ### **Audio Orbs**
 **Particle Count: `High`**
 
-**[Download Audio Orbs Template](downloads\AudioOrbs.rbxm)**
+**[Download Audio Orbs Template](downloads/AudioOrbs.rbxm)**
 
 ---
 
 ### **Audio Waveform**
 **Particle Count: `High`**
 
-**[Download Audio Waveform Template](downloads\AudioWaveform.rbxm)**
+**[Download Audio Waveform Template](downloads/AudioWaveform.rbxm)**
 
 !!! note "Other features"
     The Audio Waveform template has some other disabled features inside of the emitter and reference object
 
     The trail is disabled, enable it and make the waveform parts fully transparent inside the script for a smoother and objectively prettier result
-    
+
     The emitter has a wave script that rocks the emitter back and fourth, creating a wave-like effect.
 
 ---
@@ -53,7 +53,7 @@ Don't expect lots of these, most of these templates are made simply from me usin
 ### **Fireworks**
 **Particle Count: `Very High`**
 
-**[Download Fireworks Template](downloads\Fireworks.rbxm)**
+**[Download Fireworks Template](downloads/Fireworks.rbxm)**
 
 ---
 

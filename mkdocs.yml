@@ -82,8 +82,7 @@ nav:
       - Instability Properties: properties/instability.md
       - Function Properties: properties/event-functions.md
       - Debug Properties: properties/debug-properties.md
-  - Prerequisites:
-      - Part Cache: prerequisites/partcache.md
+  - Prerequisites: prerequisites.md
   - Free Templates: templatelist.md
   - Report an Issue: reportbugrequest.md
   - License: customprovisionlicense.md
