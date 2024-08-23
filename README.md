@@ -7,11 +7,10 @@
 <p align="center">
 <br/>
 <br/>
-<a href="https://fancyducc.github.io/3D-Particle-System/getting-started/"><strong>See the official documentation</strong></a>
+<a href="https://fancyducc.github.io/3D-Particle-System/getting-started/" target="_blank"><strong>See the official documentation</strong></a>
 <br/>
 <br/>
-<a href="https://fancyducc.github.io/3D-Particle-System/reportbugrequest/">Report Bug</a>
-<a href="https://fancyducc.github.io/3D-Particle-System/reportbugrequest/">Request Feature</a> 
+<a href="https://fancyducc.github.io/3D-Particle-System/reportbugrequest/" target="_blank">Report Bug or Request feature</a>
 </p>
 </div>
 
