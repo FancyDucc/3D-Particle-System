@@ -4,7 +4,7 @@ The form below lets you send a report, request, or whatever to the creator of th
 
 <form id="bug-report-form" class="report-form">
   <div class="form-group">
-    <label for="username" style="color: #fff;">Discord Username (@ExampleName):</label><br>
+    <label for="username" style="color: #fff;">Discord Username (@ExampleName) or method I can contact you back with:</label><br>
     <input type="text" id="username" name="username" style="background-color: #444; color: #fff; border: 3px solid #6d33ff; border-radius: 9px; padding: 10px; width: 100%;" required>
   </div>
   
