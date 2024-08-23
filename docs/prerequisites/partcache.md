@@ -10,4 +10,4 @@ The **PartCache** module is already included with the **3D Particle Emitter** mo
 
 If you’re interested in using **PartCache** separately for other projects or want to explore its functionality on its own, you can see it here:
 
-[PartCache Module (Devforum)](https://devforum.roblox.com/t/partcache-for-all-your-quick-part-creation-needs/246641)
+<a href="https://devforum.roblox.com/t/partcache-for-all-your-quick-part-creation-needs/246641" target="_blank">PartCache Module (Devforum)</a>

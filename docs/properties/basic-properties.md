@@ -13,6 +13,16 @@ The system comes with many properties that you can adjust to create particle eff
   })
   ```
 
+For starting and stopping an emitter outside of the `Create({` function, use:
+```lua
+local emitter = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
+
+emitter:Start()
+emitter:Stop()
+emitter:Kill()
+
+```
+
 ## **Acceleration**
 
 - **Description:** Controls the acceleration applied to particles, allowing them to speed up or slow down over time.
@@ -163,6 +173,9 @@ The system comes with many properties that you can adjust to create particle eff
 </video>
 
 ## **RotationSpeed**
+
+!!! warning "X axis warning"
+    The X axis in RotationSpeed is notorious for causing issues, I've researched far far into this and this is a problem with the way Roblox handles adding rotation, if possible, avoid high numbers of the X axis, this is on Roblox, I can't fix this :/mk
 
 - **Description:** Defines the speed at which particles rotate over their lifetime.
 - **Default:** `Vector3.new(0, 0, 0)`

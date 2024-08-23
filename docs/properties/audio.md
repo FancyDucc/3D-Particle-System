@@ -1,6 +1,7 @@
 # Audio Properties
 
 The system can be customized to react to audio, letting you to create effects that sync with music or other sounds in your game.
+The 3D particle system is quite powerful when it comes to audio, as it has many features that can be easily accessed and to nearly every time provide a good result.
 
 !!! note
     
@@ -204,6 +205,32 @@ The system can be customized to react to audio, letting you to create effects th
   <source src="../../media/AudioHueShift.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+## **BeatDetectionThreshold**
+
+- **Description:** Controls how much the audio loudness should change between frames for the system to consider that point in music a beat or a hit.
+- **Default:** `22.5`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Audio loudness must increase by 25 within 2 frames to be considered a beat
+      AudioReactive = sound,
+      BeatDetectionThreshold = 25,
+  })
+  ```
+
+## **OnBeat**
+
+- **Description:** A function that is played every beat or hit that the system detects, using `BeatDetectionThreshold` as it's source.
+- **Default:** `0.15`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Prints "Beat" everytime a beat happens
+      AudioReactive = sound,
+      OnBeat = function(particle)
+          print("Beat")
+      end
+  })
+  ```
 
 
 ---

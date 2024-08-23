@@ -1,8 +1,9 @@
 site_name: 3D Particle Emitter Documentation
-site_url: https://fancyducc.github.io/3D-Particle-System/
+site_url: https://fancyducc.github.io/3D-Particle-System/getting-started/
 
 plugins:
   - search
+  
 
 theme:
   name: material

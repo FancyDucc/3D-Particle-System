@@ -36,6 +36,20 @@ Don't expect lots of these, most of these templates are made simply from me usin
 
 ---
 
+### **Audio Waveform**
+**Particle Count: `High`**
+
+**[Download Audio Waveform Template](downloads\AudioWaveform.rbxm)**
+
+!!! note "Other features"
+    The Audio Waveform template has some other disabled features inside of the emitter and reference object
+
+    The trail is disabled, enable it and make the waveform parts fully transparent inside the script for a smoother and objectively prettier result
+    
+    The emitter has a wave script that rocks the emitter back and fourth, creating a wave-like effect.
+
+---
+
 ### **Fireworks**
 **Particle Count: `Very High`**
 
