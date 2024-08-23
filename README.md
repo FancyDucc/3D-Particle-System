@@ -1,4 +1,19 @@
-# 3D Particle Emitter System for Roblox
+<p align="center">
+  <img src="docs/images/3DPS%20Logo.png" alt="Logo" width="600">
+</p>
+
+</a>
+<h1 align="center">3D Particle Emitter System for Roblox</h1>
+<p align="center">
+<br/>
+<br/>
+<a href="https://fancyducc.github.io/3D-Particle-System/getting-started/"><strong>See the official documentation</strong></a>
+<br/>
+<br/>
+<a href="https://fancyducc.github.io/3D-Particle-System/reportbugrequest/">Report Bug</a>
+<a href="https://fancyducc.github.io/3D-Particle-System/reportbugrequest/">Request Feature</a> 
+</p>
+</div>
 
 A powerful and flexible 3D particle system for Roblox, having advanced features and customization options for every occasion, this is a versatile system when plenty of properties, every 2D property that is possible to be ported to 3D has been ported into this system, as well as a LOT of other properties that can be useful.
 
