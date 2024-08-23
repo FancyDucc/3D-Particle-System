@@ -69,6 +69,6 @@ This project is licensed under a [Custom Provision License](https://fancyducc.gi
 
 ## Credits
 
-Created entirely by [Aeresei/Fancy Ducc]
+Created entirely by Aeresei/Fancy Ducc
 
 Special thanks to the Roblox developer community for their support and feedback.
