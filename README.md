@@ -33,7 +33,7 @@ It is highly recommended to use the provided [documentation](https://fancyducc.g
 
 ## Installation
 
-1. Get the [3D Particle Emitter module](https://create.roblox.com/store/asset/18888338285/ParticleEmitter3D) from the Roblox library or download it from the [documentation](https://fancyducc.github.io/3D-Particle-System/installation/).
+1. Get the [3D Particle Emitter module](https://create.roblox.com/store/asset/89242445503292/ParticleEmitter3D-V102) from the Roblox library or download it from the [documentation](https://fancyducc.github.io/3D-Particle-System/installation/).
 2. Add the module into your game, preferably in `ReplicatedStorage`.
 3. Make sure you have the [PartCache module](https://devforum.roblox.com/t/objectcache-a-modern-blazing-fast-model-and-part-cache/3104112) installed as well.
 
