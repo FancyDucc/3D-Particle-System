@@ -148,28 +148,25 @@ The system has many other properties that you can use to have even more control 
 
 ## **Flipbook**
 
-!!! note "Frame Layout"
-    Each frame must be named "Frame#" and in the order that you want, for example, Frame4 can be at the start, followed by Frame1, and it will continue with Frame 1, going through the other frames to Frame4.
-
 - **Description:** Enables particles to cycle through multiple meshes and textures during their lifetime, creating an animated flipbook effect. The mesh and texture IDs are updated at a specified frame rate, and the animation can follow different patterns.
 - **Default:** `nil`
 - **Example:**
   ```lua
   emitter:Create({
       Flipbook = { -- Define the frames for the flipbook animation
-          Frame1 = {
+          {
               MeshId = 'rbxassetid://1',
               TextureId = 'rbxassetid://2'
           },
-          Frame2 = {
+          {
               MeshId = 'rbxassetid://3',
               TextureId = 'rbxassetid://4'
           },
-          Frame3 = {
+          {
               MeshId = 'rbxassetid://5',
               TextureId = 'rbxassetid://6'
           },
-          Frame4 = {
+          {
               MeshId = 'rbxassetid://7',
               TextureId = 'rbxassetid://8'
           }
