@@ -8,7 +8,7 @@ Getting started with the 3D Particle Emitter is very easy and straightforward, s
 
 First, you’ll need to download the `.rbxm` file that contains the 3D Particle Emitter module.
 
-[Download the 3D Particle Emitter Module](downloads\ParticleEmitter3D.rbxm)
+[Download the 3D Particle Emitter Module](downloads/ParticleEmitter3D.rbxm)
 
 If you aren't comfortable with downloading the file or you are having troubles downloading it, a different method is to install from the Roblox creator hub, you can install the model from here: 
 
@@ -27,13 +27,7 @@ Once you’ve downloaded the module, open up your Roblox Studio experience. You 
 3. **Placement**: Place the module in **ReplicatedStorage** if you want it to be accessible to both server and client scripts. If it's only going to be used server-side, **ServerScriptService** is the best spot for it.
 
 !!! note
-    The module is recommended to be placed in the **ReplicatedStorage** and for most particles to be used on the Client, it's not recommended to use particles on the server as it can cause lag to every player when many particles are in use.
-
-
-<video width="600" controls>
-  <source src="../media/DragandDrop.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    The module is strongly recommended to be placed in the **ReplicatedStorage** and for most particles to be used on the Client, it's not recommended to use particles on the server as it can cause lag to every player when many particles are in use.
 
 ---
 
