@@ -146,6 +146,81 @@ The system has many other properties that you can use to have even more control 
 
 ---
 
+## **Flipbook**
+
+!!! note "Frame Layout"
+    Each frame must be named "Frame#" and in the order that you want, for example, Frame4 can be at the start, followed by Frame1, and it will continue with Frame 1, going through the other frames to Frame4.
+
+- **Description:** Enables particles to cycle through multiple meshes and textures during their lifetime, creating an animated flipbook effect. The mesh and texture IDs are updated at a specified frame rate, and the animation can follow different patterns.
+- **Default:** `nil`
+- **Example:**
+  ```lua
+  emitter:Create({
+      Flipbook = { -- Define the frames for the flipbook animation
+          Frame1 = {
+              MeshId = 'rbxassetid://1',
+              TextureId = 'rbxassetid://2'
+          },
+          Frame2 = {
+              MeshId = 'rbxassetid://3',
+              TextureId = 'rbxassetid://4'
+          },
+          Frame3 = {
+              MeshId = 'rbxassetid://5',
+              TextureId = 'rbxassetid://6'
+          },
+          Frame4 = {
+              MeshId = 'rbxassetid://7',
+              TextureId = 'rbxassetid://8'
+          }
+      },
+  })
+  ```
+
+---
+
+## **FlipbookMode**
+
+- **Description:** Determines the cycling pattern of the flipbook frames. Available modes are:
+  - **Loop:** Cycles through all frames from start to end, then loops back to the first frame.
+  - **OneShot:** Runs through all frames once, starting from the first frame, and adjusts frame rate to match the particle's lifetime.
+  - **PingPong:** Moves through the frames forward to the last frame, then reverses back to the first frame at the same frame rate.
+  - **Random:** Selects a random frame at each interval.
+- **Default:** `Enum.ParticleFlipbookMode.OneShot`
+
+---
+
+## **FlipbookFrameRate**
+
+!!! note "OneShot Ignores FrameRate"
+    When using `OneShot` as a `FlipbookMode`, the frame rate is ignored as `OneShot` adjusts the frame rate to match the particles lifetime.
+
+- **Description:** Sets the frame rate for the flipbook animation. Can be a fixed number or a `NumberRange` to randomize the rate.
+- **Default:** `2`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will cycle through frames at a random frame rate between 1 and 4 frames per second
+      Flipbook = {}
+      FlipbookFrameRate = NumberRange.new(1, 4)
+  })
+  ```
+
+---
+
+## **FlipbookStartRandom**
+
+- **Description:** If enabled, the flipbook animation starts at a random frame instead of the first frame.
+- **Default:** `false`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles start at a random frame in the flipbook
+      Flipbook = {}
+      FlipbookStartRandom = true
+  })
+  ```
+
+---
+
 ## **ParticleEmitter2D (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"
 - **Description:** When specified, each particle emits their own 2D particle emitter.
@@ -158,6 +233,7 @@ The system has many other properties that you can use to have even more control 
   ```
 
 ---
+
 
 ## **IsShapeMesh (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"

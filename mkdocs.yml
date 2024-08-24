@@ -20,8 +20,10 @@ theme:
     - navigation.indexes
     - navigation.expand
     - navigation.top
-    - toc.integrate
+    # - toc.integrate
+    - toc.follow
     - navigation.path
+    - navigation.prune
     - navigation.tracking
     - search.highlight
     - search.share
@@ -62,6 +64,9 @@ markdown_extensions:
   - codehilite:
       guess_lang: false
       default_lang: lua
+  - toc:
+      permalink: true
+      toc_depth: 3
 
 extra_javascript:
   - javascripts/extra.js
@@ -85,4 +90,5 @@ nav:
   - Prerequisites: prerequisites.md
   - Free Templates: templatelist.md
   - Report an Issue: reportbugrequest.md
+  - Update Log: modulechangelog.md
   - License: customprovisionlicense.md
