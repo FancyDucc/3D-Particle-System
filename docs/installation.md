@@ -12,7 +12,7 @@ First, you’ll need to download the `.rbxm` file that contains the 3D Particle 
 
 If you aren't comfortable with downloading the file or you are having troubles downloading it, a different method is to install from the Roblox creator hub, you can install the model from here: 
 
-[Roblox Creator Hub](https://create.roblox.com/store/asset/89242445503292/ParticleEmitter3D-V102)
+[Roblox Creator Hub](https://create.roblox.com/store/asset/89242445503292)
 
 ---
 
