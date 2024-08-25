@@ -218,6 +218,19 @@ The system has many other properties that you can use to have even more control 
 
 ---
 
+## **VelocityInheritance**
+
+- **Description:** Controls how much of the adornee's velocity is inherited by emitted particles. This allows particles to carry over the momentum of the object they are emitted from.
+- **Default:** `0`
+- **Example:**
+  ```lua
+  emitter:Create({
+      VelocityInheritance = 0.5 -- Particles inherit 50% of the adornee's velocity
+  })
+  ```
+
+---
+
 ## **ParticleEmitter2D (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"
 - **Description:** When specified, each particle emits their own 2D particle emitter.

@@ -8,7 +8,7 @@ Getting started with the 3D Particle Emitter is very easy and straightforward, s
 
 First, you’ll need to download the `.rbxm` file that contains the 3D Particle Emitter module.
 
-[Download the 3D Particle Emitter Module](downloads/ParticleEmitter3D.rbxm)
+[Download the 3D Particle Emitter Module](downloads/ParticleEmitter3DV1.0.2.rbxm)
 
 If you aren't comfortable with downloading the file or you are having troubles downloading it, a different method is to install from the Roblox creator hub, you can install the model from here: 
 

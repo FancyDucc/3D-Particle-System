@@ -29,6 +29,13 @@ Don't expect lots of these, most of these templates are made simply from me usin
 
 ---
 
+### **Falling Leaves**
+**Particle Count: `Medium`**
+
+**[Download Fireflies Template](downloads/FallingLeaves.rbxm)**
+
+---
+
 ### **Audio Orbs**
 **Particle Count: `High`**
 

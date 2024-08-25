@@ -166,6 +166,11 @@ emitter:Kill()
       Rotation = Vector3.new(0, 45, 45)
   })
   ```
+  ```lua
+  emitter:Create({ -- Particles randomize all axes fully
+      Rotation = {NumberRange.new(-360, 360), NumberRange.new(-360, 360), NumberRange.new(-360, 360)}
+  })
+  ```
 
 <video width="600" controls>
   <source src="../../media/Rotation.mp4" type="video/mp4">
@@ -183,6 +188,11 @@ emitter:Kill()
   ```lua
   emitter:Create({ -- Particles rotate at 10 degrees per second around the Y-axis
       RotationSpeed = Vector3.new(0, 10, 0)
+  })
+  ```
+  ```lua
+  emitter:Create({ -- Particles rotate between -20 and 20 degrees per second around Y and Z axes
+      Rotation = {0, NumberRange.new(-20, 20), NumberRange.new(-20, 20)}
   })
   ```
 
