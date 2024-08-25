@@ -90,19 +90,6 @@ The system has many other properties that you can use to have even more control 
 
 ---
 
-## **LockedToPart**
-
-- **Description:** Keeps particles attached to the part they are emitted from, even if the emitter moves.
-- **Default:** `false`
-- **Example:**
-  ```lua
-  emitter:Create({ -- Particles stay attached to the part
-      LockedToPart = true
-  })
-  ```
-
----
-
 ## **CastShadow**
 
 - **Description:** Determines whether the particles cast shadows.
@@ -123,7 +110,7 @@ The system has many other properties that you can use to have even more control 
 
 ## **EmitterID**
 
-- **Description:** When specified, any string (a word inside of "quotes") will turn into an ID that is binded to the emitter, which allows you to `Start`, `Stop`, or `Destroy` any emitter from any script, as long as the script that remotely interacts with the script is the same `RunContext` as the script that created the emitter, so Client scripts can only remotely control other client emitters, while server scripts can only remotely control other server emitters, they cannot cross. ID can be literally anything as long as it is a string.
+- **Description:** When specified, any string (a word inside of "quotes") will turn into an ID that is binded to the emitter, which allows you to run any function from any emitter from any script, as long as the script that remotely interacts with the script is the same `RunContext` as the script that created the emitter, so Client scripts can only remotely control other client emitters, while server scripts can only remotely control other server emitters, they cannot cross. ID can be literally anything as long as it is a string.
 - **Default:** `"Default"`
 - **Example:**
   ```lua
@@ -136,7 +123,7 @@ The system has many other properties that you can use to have even more control 
 
 ## **GetEmitterByID**
 
-- **Description:** When called, the variable paired with the function recieves a callback of the emitter, allowing you to `Start`, `Stop`, or `Destroy` any emitter from any script, as long as the script is server-sided
+- **Description:** When called, the variable paired with the function recieves a callback of the emitter, allowing you to run any function from any emitter from any script, as long as the script is the same `RunContext` as the script that created the emitter.
 - **Example:**
   ```lua
   local ReplicatedStorage = game:GetService("ReplicatedStorage")

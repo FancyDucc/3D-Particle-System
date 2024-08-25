@@ -4,6 +4,9 @@ The system comes with many properties that you can adjust to create particle eff
 
 ## **Enabled**
 
+!!! note "Recommendation"
+    While `emitter.enabled` works for starting and stopping the emitter, it is not recommended, and while `Enabled` is a property in the `emitter:Create({` that works, it also isn't recommended to use, it's more recommended to use `emitter:Start()` or `emitter:Stop()` immediately outside of the `emitter:Create({` table if you want to start the emitter disabled.
+
 - **Description:** Control's whether the particles are emitting or not.
 - **Default:** `true`
 - **Example:**
@@ -14,14 +17,16 @@ The system comes with many properties that you can adjust to create particle eff
   ```
 
 For starting and stopping an emitter outside of the `Create({` function, use:
-```lua
-local emitter = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
+  ```lua
+  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
+  local emitter = ParticleEmitter3D.new()
+  emitter:Create({})
 
-emitter:Start()
-emitter:Stop()
-emitter:Kill()
+  emitter:Start()
+  emitter:Stop()
+  emitter:Kill()
 
-```
+  ```
 
 ## **Acceleration**
 
@@ -180,7 +185,7 @@ emitter:Kill()
 ## **RotationSpeed**
 
 !!! warning "X axis warning"
-    The X axis in RotationSpeed is notorious for causing issues, I've researched far far into this and this is a problem with the way Roblox handles adding rotation, if possible, avoid high numbers of the X axis, this is on Roblox, I can't fix this :/mk
+    The X axis in RotationSpeed is notorious for causing issues, I've researched far far into this and this is a problem with the way Roblox handles adding rotation, if possible, avoid high numbers of the X axis, this can only be fixed by Roblox, I can't fix this :/
 
 - **Description:** Defines the speed at which particles rotate over their lifetime.
 - **Default:** `Vector3.new(0, 0, 0)`
@@ -192,7 +197,7 @@ emitter:Kill()
   ```
   ```lua
   emitter:Create({ -- Particles rotate between -20 and 20 degrees per second around Y and Z axes
-      Rotation = {0, NumberRange.new(-20, 20), NumberRange.new(-20, 20)}
+      RotationSpeed = {0, NumberRange.new(-20, 20), NumberRange.new(-20, 20)}
   })
   ```
 

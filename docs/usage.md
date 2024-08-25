@@ -125,11 +125,8 @@ To start the particle emitter, use:
 ```lua
 emitter:Start()
 ```
-Or
-```lua
-emitter.enabled = true
-```
-It is recommended to use `emitter:Start()` when enabling a particle as it uses a preparation system before turning it on, making sure to minimize any possible crashes or feedback loops.
+
+`emitter.enabled = true` also works, however it is recommended to use `emitter:Start()` as it correctly sets `RunService` loops
 
 ---
 
@@ -138,27 +135,27 @@ When you want to stop emitting particles, simply use:
 ```lua
 emitter:Stop()
 ```
-Or
-```lua
-emitter.enabled = false
-```
-`emitter:Stop()` and `emitter.enabled = false` have no difference, you can use either freely.
+
+`emitter.enabled = false` also works, however it is recommended to use `emitter:Stop()` as it correctly ends `RunService` loops
 
 ---
 
 When you want to destroy the emitter and remove all particles, use:
 
 ```lua
-emitter:Destroy()
+emitter:Kill()
 ```
 
-`emitter:Destroy()` will only destroy particles and stop emitting them, you can use `emitter:Start()` to start the same emitter again.
+`emitter:Kill()` will only destroy particles and stop emitting them, you can use `emitter:Start()` to start the same emitter again.
 
 ## **Useful things to know**
 
 All properties of emitters can be modified from any script when using `GetEmitterFromID` or anywhere in a script where the emitter is created, the only requirement is that the emitter has those properties used, for example;
-It is not possible to change the `SpreadAngle` of the emitters if `SpreadAngle` is not used in the `emitter:Create({` table.
+It is not possible to change the `SpreadAngle` of the emitters if `SpreadAngle` is not created in the `emitter:Create({` table.
 
+While `emitter.enabled` works for starting and stopping the emitter, it is not recommended, and while `Enabled` is a property in the `emitter:Create({` that works, it also isn't recommended to use, it's more recommended to use `emitter:Start()` or `emitter:Stop()` immediately outside of the `emitter:Create({` table if you want to start the emitter disabled.
+
+When using property functions and timing anything using a `task.wait()` it is more recommended to use `task.delay(time, function())` at least once in the property function, otherwise the function will halt all particle updates.
 
 
 ---
