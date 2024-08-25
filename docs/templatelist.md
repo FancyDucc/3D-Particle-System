@@ -32,7 +32,14 @@ Don't expect lots of these, most of these templates are made simply from me usin
 ### **Falling Leaves**
 **Particle Count: `Medium`**
 
-**[Download Fireflies Template](downloads/FallingLeaves.rbxm)**
+**[Download Falling Leaves Template](downloads/FallingLeaves.rbxm)**
+
+---
+
+### **Gun**
+**Particle Count: `Medium/High`**
+
+**[Download Gun Template](downloads/Gun.rbxm)**
 
 ---
 

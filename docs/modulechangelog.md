@@ -45,4 +45,11 @@ There **will not** be a Creator Hub link for every older version however, as Rob
 - <span class="update-log fixed">Fixed</span> SpreadAngle Y axis not doing anything
 
 #### Downloads
-- **[V1.0.2 Module](downloads/ParticleEmitter3DV1.0.2.rbxm)**
+- **[V1.0.3 Module](downloads/OldModules/ParticleEmitter3DV1.0.2.rbxm)**
+
+## Version 1.0.3 - *Gun*
+#### Changes:
+- <span class="update-log added">Added Free Template</span> Gun
+
+#### Downloads
+- **[V1.0.3 Module](downloads/ParticleEmitter3DV1.0.3.rbxm)**

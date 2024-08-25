@@ -56,6 +56,25 @@ The system lets you to control how particles interact with the environment throu
 
 ---
 
+## **CollisionRange**
+
+- **Description:** When provided, this number will be the range of raycasting around particles in studs.
+- **Default:** `nil`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will check for collision within 5 studs
+      EnableCollision = true,
+      CollisionRange = 5
+  })
+  ```
+
+<video width="600" controls>
+  <source src="../../media/ParticlesAreSolid.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+---
+
 ## **OnCollision**
 
 - **Description:** Lets you to use a function that is called whenever a particle collides with an object. This can be used to trigger specific effects, such as particles changing color's on impact or creating explosive rockets/objects.
