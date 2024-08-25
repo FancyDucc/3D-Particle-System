@@ -5,7 +5,7 @@
 </a>
 <h1 align="center">3D Particle Emitter System for Roblox</h1>
 <p align="center">
-<a align="center">Current Version: 1.0.2 - Flipbooks</a>
+<a align="center">Current Version: 1.0.3 - Gun</a>
 <br/>
 <br/>
 <a href="https://fancyducc.github.io/3D-Particle-System/getting-started/" target="_blank"><strong>See the official documentation</strong></a>
@@ -33,7 +33,7 @@ It is highly recommended to use the provided [documentation](https://fancyducc.g
 
 ## Installation
 
-1. Get the [3D Particle Emitter module](https://create.roblox.com/store/asset/89242445503292/ParticleEmitter3D-V102) from the Roblox library or download it from the [documentation](https://fancyducc.github.io/3D-Particle-System/installation/).
+1. Get the [3D Particle Emitter module](https://create.roblox.com/store/asset/89242445503292) from the Roblox library or download it from the [documentation](https://fancyducc.github.io/3D-Particle-System/installation/).
 2. Add the module into your game, preferably in `ReplicatedStorage`.
 3. Make sure you have the [PartCache module](https://devforum.roblox.com/t/objectcache-a-modern-blazing-fast-model-and-part-cache/3104112) installed as well.
 
