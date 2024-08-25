@@ -66,6 +66,8 @@ Pre-configured templates are available for quick setup:
 
 - Bouncy Balls
 - Fireflies
+- Falling Leaves
+- Gun
 - Audio Orbs
 - Audio Waveform
 - Fireworks
