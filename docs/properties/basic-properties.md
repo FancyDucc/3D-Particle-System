@@ -241,12 +241,12 @@ For starting and stopping an emitter outside of the `Create({` function, use:
 
 ## **SpreadAngle**
 
-- **Description:** Determines the angle at which particles are emitted at X and Z values, giving you more directional control.
-- **Default:** `Vector2.new(0, 0)`
+- **Description:** Determines the angle at which particles are emitted at X, Y, and Z values, giving you more directional control.
+- **Default:** `Vector3.new(0, 0, 0)`
 - **Example:**
   ```lua
   emitter:Create({ -- Particles spread at angles between 15 and 30 degrees
-      SpreadAngle = Vector2.new(15, 30)
+      SpreadAngle = Vector3.new(15, 30, 0)
   })
   ```
 

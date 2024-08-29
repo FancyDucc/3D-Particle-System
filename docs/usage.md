@@ -157,7 +157,6 @@ While `emitter.enabled` works for starting and stopping the emitter, it is not r
 
 When using property functions and timing anything using a `task.wait()` it is more recommended to use `task.delay(time, function())` at least once in the property function, otherwise the function will halt all particle updates.
 
-
 ---
 
 And that's all for usage, this should give you a good starting point to experiment and create different effects. For more advanced properties and customizations, go to the properties section of the documentation.

@@ -31,6 +31,20 @@ The system comes with a property list that can allow you to create randomness in
 
 ---
 
+## **InstabilitySmoothness**
+
+- **Description:** Controls the percentage of how fast `Instability` happens on a percentage scale of 0 to 100 (which can go past 100%). 0% is so slow instability doesnt seem to work, 100% is semi-instant.
+- **Default:** `0`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Instability will be smooth but still have visible changes.
+      Instability = 2,
+      InstabilitySmoothness = 50
+  })
+  ```
+
+---
+
 <video width="600" controls>
   <source src="../../media/Instability.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -38,4 +52,4 @@ The system comes with a property list that can allow you to create randomness in
 
 ---
 
-`Instability` properties allow you to mimic electricity effects or randomness. `Instability` is a useful property when used right.
+`Instability` properties allow you to mimic electricity effects or randomness or paired with the smoothness can be created to mimic flies or flying animals. `Instability` is a useful property when used right.

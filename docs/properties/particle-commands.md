@@ -7,6 +7,48 @@ The system allows you to change and modify particles directly using a list of gi
 !!! note "No Video"
     Videos are not provided with these functions
 
+## **Start**
+
+- **Description:** Will start the emitter
+- **Example:**
+  ```lua
+  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
+  local emitter = ParticleEmitter3D.new()
+  emitter:Create({})
+
+  emitter:Start()
+  ```
+
+---
+
+## **Stop**
+
+- **Description:** Will stop the emitter from emitting particles
+- **Example:**
+  ```lua
+  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
+  local emitter = ParticleEmitter3D.new()
+  emitter:Create({})
+
+  emitter:Stop()
+  ```
+
+---
+
+## **Kill**
+
+- **Description:** Will stop the emitter from emitting particles and remove all particles that are active and from that emitter
+- **Example:**
+  ```lua
+  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
+  local emitter = ParticleEmitter3D.new()
+  emitter:Create({})
+
+  emitter:Kill()
+  ```
+
+---
+
 ## **FreezeParticle**
 
 - **Description:** The function can be called on a certain particle object to freeze it in place, transparency, colors, and other properties will still take effect.

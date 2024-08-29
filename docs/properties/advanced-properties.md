@@ -218,6 +218,45 @@ The system has many other properties that you can use to have even more control 
 
 ---
 
+## **KeepOriginalTransparencies**
+
+- **Description:** Determines if all transparency related parts inside a model being emitted remains how it was when the model is first added.
+- **Default:** `false`
+- **Example:**
+  ```lua
+  emitter:Create({
+      KeepOriginalTransparencies = true
+  })
+  ```
+
+---
+
+## **KeepOriginalColors**
+
+- **Description:** Determines if all colors given to parts inside a model being emitted remains how it was when the model is first added.
+- **Default:** `false`
+- **Example:**
+  ```lua
+  emitter:Create({
+      KeepOriginalColors = true
+  })
+  ```
+
+---
+
+## **KeepOriginalMaterials**
+
+- **Description:** Determines if all materials on parts inside a model being emitted remains how it was when the model is first added.
+- **Default:** `false`
+- **Example:**
+  ```lua
+  emitter:Create({
+      KeepOriginalMaterials = true
+  })
+  ```
+
+---
+
 ## **ParticleEmitter2D (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"
 - **Description:** When specified, each particle emits their own 2D particle emitter.

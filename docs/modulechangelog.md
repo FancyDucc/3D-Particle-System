@@ -45,11 +45,33 @@ There **will not** be a Creator Hub link for every older version however, as Rob
 - <span class="update-log fixed">Fixed</span> SpreadAngle Y axis not doing anything
 
 #### Downloads
-- **[V1.0.3 Module](downloads/OldModules/ParticleEmitter3DV1.0.2.rbxm)**
+- **[V1.0.2 Module](downloads/OldModules/ParticleEmitter3DV1.0.2.rbxm)**
 
 ## Version 1.0.3 - *Gun*
 #### Changes:
+- <span class="update-log added">Added Property</span> CollisionRange
 - <span class="update-log added">Added Free Template</span> Gun
+- <span class="update-log changed">Changed Property</span> SpreadAngle
 
 #### Downloads
-- **[V1.0.3 Module](downloads/ParticleEmitter3DV1.0.3.rbxm)**
+- **[V1.0.3 Module](downloads/OldModules/ParticleEmitter3DV1.0.3.rbxm)**
+
+## Version 1.0.4 - *Models n' More*
+#### Changes:
+- <span class="update-log added">Added Property</span> KeepOriginalTransparencies
+- <span class="update-log added">Added Property</span> KeepOriginalColors
+- <span class="update-log added">Added Property</span> KeepOriginalMaterials
+- <span class="update-log added">Added Property</span> InstabilitySmoothness
+- <span class="update-log changed">Changed Property</span> Completely revamped Instability
+- <span class="update-log changed">Changed Property</span> SpreadAngle from Vector2 to Vector3
+- <span class="update-log changed">Changed Free Template</span> Revamped AudioOrbs
+- <span class="update-log changed">Changed Free Template</span> Revamped Fireworks
+- <span class="update-log changed">Changed Free Template</span> Revamped Fireflies
+- <span class="update-log changed">Changed Free Template</span> Revamped BouncyBalls
+- <span class="update-log changed">Changed Free Template</span> Revamped AudioWaveform
+- <span class="update-log removed">Removed Free Template</span> Falling Leaves
+- <span class="update-log fixed">Fixed</span> SpreadAngle in templates broken
+- <span class="update-log fixed">Fixed</span> Models not emitting correctly
+
+#### Downloads
+- **[V1.0.4 Module](downloads/ParticleEmitter3DV1.0.4.rbxm)**
