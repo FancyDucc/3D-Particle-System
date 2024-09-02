@@ -74,4 +74,26 @@ There **will not** be a Creator Hub link for every older version however, as Rob
 - <span class="update-log fixed">Fixed</span> Models not emitting correctly
 
 #### Downloads
-- **[V1.0.4 Module](downloads/ParticleEmitter3DV1.0.4.rbxm)**
+- **[V1.0.4 Module](downloads/OldModules/ParticleEmitter3DV1.0.4.rbxm)**
+
+## Version 1.0.5 - *Pure Performance*
+#### Changes:
+- <span class="update-log added">New Logo and Name</span> VortexFX
+
+- <span class="update-log added">Added Property</span> LookAt
+- <span class="update-log added">Added Property</span> EmissionShape
+- <span class="update-log added">Added Property</span> CullingEnabled
+- <span class="update-log added">Added Property</span> AggressiveCullingEnabled
+- <span class="update-log added">Added Property</span> FocusAware
+- <span class="update-log added">Added Property</span> RenderDistance
+- <span class="update-log added">Added Property</span> MaximumParticleCount
+- <span class="update-log added">Added Property</span> MinimumParticleCount
+- <span class="update-log added">Added Property</span> AdaptiveParticleLimits
+- <span class="update-log added">Added Property</span> CullingExtentsOffset
+- <span class="update-log added">Added New Page</span> Performance Properties
+- <span class="update-log changed">Changed Property</span> Added CFrame options for Rotation
+- <span class="update-log changed">Changed System</span> Revamped Reactive Coordinate Interaction Point (RCIP)
+- <span class="update-log added">Added Free Template</span> Lasers
+
+#### Downloads
+- **[V1.0.5 Module](downloads/VortexFXV1.0.5.rbxm)**

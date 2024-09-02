@@ -1,23 +1,23 @@
-# 3D Particle Emitter Documentation
+# VortexFX Documentation
 
-**Current Version: 1.0.1 - First Release**
+**Current Version: 1.0.5 - Pure Performance**
 
 ---
 
-![Alt text](images/3DPS%20Logo.png)
+![Alt text](images/VortexFXIcon.png)
 
 ---
 
 ## **Introduction**
 
-Welcome to the 3D Particle Emitter documentation!
+Welcome to the official VortexFX documentation!
  
 This system is designed to be able to give you just a bit more control over particles, and make them 3D at the same time! This system has features that go beyond normal 2D particles, the goal behind this system is to give you the freedom to create just about anything you can imagine.
 
 If you’re aiming for effects like fireflies or lightning bolts or audio visualization, this system has you covered.
 
 !!! danger "Notice"
-    <div class="danger-header">3DParticleEmitter is in no way whatsoever meant to replace 2D particles, 2D particles are much more performance friendly and look better for circumstances that need it, 3D Particles are meant to add onto 2D particles or to be used as extra decoration.</div>
+    <div class="danger-header">VortexFX is in no way whatsoever meant to replace 2D particles, 2D particles are much more performance friendly and look better for circumstances that need it, 3D Particles are meant to add onto 2D particles or to be used as extra decoration.</div>
 
 Videos are provided for almost all properties so you can determine the properties you need to get a perfect result before needing to download anything
 Videos are NOT provided for super simple properties, like Rate or LifeTime

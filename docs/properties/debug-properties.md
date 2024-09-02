@@ -20,4 +20,4 @@ The system is always open to you or others modifying and changing how the system
 
 ---
 
-With debugging, you can change the system easier... were you expecting more??
+With debugging, you can change the system yourself easier... were you expecting more??

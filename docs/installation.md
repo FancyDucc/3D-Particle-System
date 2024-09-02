@@ -1,14 +1,14 @@
 # Installation
 
-Getting started with the 3D Particle Emitter is very easy and straightforward, so you can focus more on creation than the boring stuff. Just follow these quick steps, and you’ll be up and running in no time.
+Getting started with VortexFX is very easy and straightforward, so you can focus more on creation than the boring stuff. Just follow these quick steps, and you’ll be up and running in no time.
 
 ---
 
 ## **Step 1: Download the Module**
 
-First, you’ll need to download the `.rbxm` file that contains the 3D Particle Emitter module.
+First, you’ll need to download the `.rbxm` file that contains the VortexFXParticles module.
 
-[Download the 3D Particle Emitter Module](downloads/ParticleEmitter3DV1.0.4.rbxm)
+[Download the VortexFXParticles Module](downloads/VortexFXV1.0.5.rbxm)
 
 If you aren't comfortable with downloading the file or you are having troubles downloading it, a different method is to install from the Roblox creator hub, you can install the model from here: 
 
@@ -22,7 +22,7 @@ Once you’ve downloaded the module, open up your Roblox Studio experience. You 
 
 1. **Drag and Drop**: Simply drag the downloaded `.rbxm` file from your file explorer into the **Viewport** panel (The area where you can see the game world) in Roblox Studio.
 
-2. **Click and use**: If you instead installed through the Roblox Creator Hub, you'll find the module in the Toolbox > My Models > ParticleEmitter3D, simply drag and drop or click on the panel and the module will add to the game.
+2. **Click and use**: If you instead installed through the Roblox Creator Hub, you'll find the module in the Toolbox > My Models > VortexFXParticles, simply drag and drop or click on the panel and the module will add to the game.
 
 3. **Placement**: Place the module in **ReplicatedStorage** if you want it to be accessible to both server and client scripts. If it's only going to be used server-side, **ServerScriptService** is the best spot for it.
 
@@ -37,10 +37,10 @@ With the module in place, it’s time to require it in your scripts. Here’s a 
 
 ```lua
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
-    local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
+    local VortexFXParticles = require(ReplicatedStorage:WaitForChild("VortexFXParticles"))
 ```
 Or if you chose to place the module inside of the ServerScriptService then you'll want to use:
 ```lua
     local ServerScriptService = game:GetService("ServerScriptService")
-    local ParticleEmitter3D = require(ServerScriptService:WaitForChild("ParticleEmitter3D"))
+    local VortexFXParticles = require(ServerScriptService:WaitForChild("VortexFXParticles"))
 ```

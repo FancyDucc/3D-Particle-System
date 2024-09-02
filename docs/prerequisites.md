@@ -1,8 +1,8 @@
 # Prerequisites
 
-The **3D Particle Emitter** module is designed to work  with the **ObjectCache** module, which helps optimize the reuse of parts for better performance. The good news is you don’t need to worry about setting it up separately, it comes preinstalled with the **3D Particle Emitter** system.
+The **VortexFX System** module is designed to work  with the **ObjectCache** module, which helps optimize the reuse of parts for better performance. The good news is you don’t need to worry about setting it up separately, it comes preinstalled with the **VortexFX System** system.
 
-The **ObjectCache** module is already included with the **3D Particle Emitter** module, so there's no need for additional downloads or installations. It’s integrated and ready to use as soon as you set up the **3D Particle Emitter**.
+The **ObjectCache** module is already included with the **VortexFX System** module, so there's no need for additional downloads or installations. It’s integrated and ready to use as soon as you set up the **VortexFX System**.
 
 ---
 

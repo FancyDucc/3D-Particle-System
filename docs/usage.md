@@ -1,28 +1,28 @@
 # Usage
 
-Now that you have the 3D Particle Emitter installed, let's actually use it. This guide will show you how to set up the emitter and adjust some basic properties to get you started. 
+Now that you have VortexFX installed, let's actually use it. This guide will show you how to set up the emitter and adjust some basic properties to get you started. 
 
 ---
 
 ## **Setting Up the Particle Emitter**
 
-First things first, you'll need to create a new script or add to an existing one where you want to use the 3D Particle Emitter.
+First things first, you'll need to create a new script or add to an existing one where you want to use VortexFX.
 
 Here’s how to set up the emitter:
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
+local VortexFXParticles = require(ReplicatedStorage:WaitForChild("VortexFXParticles"))
 
 local part = workspace:WaitForChild("Part") -- Replace this line in your game where you want the particles to emit from, this can be either an attachment or a basepart
-local emitter = ParticleEmitter3D.new(part)
+local emitter = VortexFXParticles.new(part)
 
 emitter:Create({ -- Properties here
  
 })
 ```
 
-In this example, we're requiring the ParticleEmitter3D module and creating a new emitter attached to a part in your workspace. Make sure to replace `"Part"` with the actual name of the part you want to attach the emitter to.
+In this example, we're requiring the VortexFXParticles module and creating a new emitter attached to a part in your workspace. Make sure to replace `"Part"` with the actual name of the part you want to attach the emitter to.
 
 ---
 
@@ -97,10 +97,10 @@ So with that, a full script should look something like:
 ??? info "Expand"
     ```lua
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
-    local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
+    local VortexFXParticles = require(ReplicatedStorage:WaitForChild("VortexFXParticles"))
 
     local part = workspace:WaitForChild("Part")
-    local emitter = ParticleEmitter3D.new(part)
+    local emitter = VortexFXParticles.new(part)
 
     emitter:Create({
         Rate = 15,

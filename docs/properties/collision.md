@@ -29,11 +29,6 @@ The system lets you to control how particles interact with the environment throu
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/EnableCollision.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 
 ---
 
@@ -48,11 +43,6 @@ The system lets you to control how particles interact with the environment throu
       ParticlesAreSolid = true
   })
   ```
-
-<video width="600" controls>
-  <source src="../../media/ParticlesAreSolid.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ---
 

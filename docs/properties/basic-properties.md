@@ -18,8 +18,8 @@ The system comes with many properties that you can adjust to create particle eff
 
 For starting and stopping an emitter outside of the `Create({` function, use:
   ```lua
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  local emitter = ParticleEmitter3D.new()
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  local emitter = VortexFXParticles.new()
   emitter:Create({})
 
   emitter:Start()
@@ -39,10 +39,7 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/Acceleration.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+---
 
 ## **Color**
 
@@ -77,10 +74,7 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/Drag.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+---
 
 ## **EmissionDirection**
 
@@ -93,10 +87,7 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/EmissionDirection.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+---
 
 ## **Lifetime**
 
@@ -114,6 +105,8 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
+---
+
 ## **Shape**
 
 - **Description:** The shape of each particle when not using `ReferenceObject`
@@ -125,10 +118,7 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/Shape.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+---
 
 ## **Material**
 
@@ -141,12 +131,13 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/Material.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+---
 
 ## **Rate**
+
+!!! warning "High rate count"
+
+    It is not a good idea to go above 60 rate without a short lifetime or in bursts, as this can lag a client or the server, depending on what you run it on.
 
 - **Description:** Determines how many particles are emitted per second.
 - **Default:** `5`
@@ -157,9 +148,7 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-!!! warning "High rate count"
-
-    It is not a good idea to go above 60 rate without a short lifetime or in bursts, as this can lag a client or the server, depending on what you run it on.
+---
 
 ## **Rotation**
 
@@ -177,10 +166,7 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/Rotation.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+---
 
 ## **RotationSpeed**
 
@@ -201,10 +187,7 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/RotationSpeed.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+---
 
 ## **Size**
 
@@ -228,6 +211,8 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
+---
+
 ## **Speed**
 
 - **Description:** Controls the speed at which particles are emitted.
@@ -238,6 +223,8 @@ For starting and stopping an emitter outside of the `Create({` function, use:
       Speed = NumberRange.new(5, 10)
   })
   ```
+
+---
 
 ## **SpreadAngle**
 
@@ -250,10 +237,7 @@ For starting and stopping an emitter outside of the `Create({` function, use:
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/SpreadAngle.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+---
 
 ## **Transparency**
 
@@ -279,4 +263,4 @@ For starting and stopping an emitter outside of the `Create({` function, use:
 
 ---
 
-These are the basic properties you can tweak to get started with the 3D Particle Emitter.
+These are the basic properties you can tweak to get started with VortexFX.

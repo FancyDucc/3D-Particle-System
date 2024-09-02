@@ -1,7 +1,7 @@
 # Audio Properties
 
 The system can be customized to react to audio, letting you to create effects that sync with music or other sounds in your game.
-The 3D particle system is quite powerful when it comes to audio, as it has many features that can be easily accessed and to nearly every time provide a good result.
+VortexFX is quite powerful when it comes to audio, as it has many features that can be easily accessed and to nearly every time provide a good result.
 
 !!! note
     
@@ -42,11 +42,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/AudioInfluenceColor.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 ---
 
 ## **AudioInfluencedSpeed**
@@ -61,11 +56,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/AudioInfluencedSpeed.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 ---
 
 ## **AudioInfluencedSize**
@@ -79,11 +69,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
       AudioInfluencedSize = true
   })
   ```
-
-<video width="600" controls>
-  <source src="../../media/AudioInfluencedSize.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ---
 
@@ -100,11 +85,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/AudioIndependantSpeed.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 ---
 
 ## **AudioIndependentSize**
@@ -119,11 +99,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
       AudioIndependentSize = true
   })
   ```
-
-<video width="600" controls>
-  <source src="../../media/AudioIndependantSize.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ---
 
@@ -140,11 +115,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/AudioIndependantColor.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 ---
 
 ## **AudioMultiplierSpeed**
@@ -159,11 +129,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
       AudioMultiplierSpeed = 2
   })
   ```
-
-<video width="600" controls>
-  <source src="../../media/AudioMultiplierSpeed.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ---
 
@@ -180,11 +145,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/AudioMultiplierSize.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 
 ---
 
@@ -200,11 +160,6 @@ The 3D particle system is quite powerful when it comes to audio, as it has many 
       HueShift = 1
   })
   ```
-
-<video width="600" controls>
-  <source src="../../media/AudioHueShift.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ## **BeatDetectionThreshold**
 

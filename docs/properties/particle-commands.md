@@ -4,16 +4,13 @@ The system allows you to change and modify particles directly using a list of gi
 
 ---
 
-!!! note "No Video"
-    Videos are not provided with these functions
-
 ## **Start**
 
 - **Description:** Will start the emitter
 - **Example:**
   ```lua
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  local emitter = ParticleEmitter3D.new()
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  local emitter = VortexFXParticles.new()
   emitter:Create({})
 
   emitter:Start()
@@ -26,8 +23,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Description:** Will stop the emitter from emitting particles
 - **Example:**
   ```lua
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  local emitter = ParticleEmitter3D.new()
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  local emitter = VortexFXParticles.new()
   emitter:Create({})
 
   emitter:Stop()
@@ -40,8 +37,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Description:** Will stop the emitter from emitting particles and remove all particles that are active and from that emitter
 - **Example:**
   ```lua
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  local emitter = ParticleEmitter3D.new()
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  local emitter = VortexFXParticles.new()
   emitter:Create({})
 
   emitter:Kill()
@@ -55,8 +52,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Example:**
   ```lua
   -- Will feeeze a particle, stopping its velocity and rotation to where it last was
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  ParticleEmitter3D:FreezeParticle(particle)
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  VortexFXParticles:FreezeParticle(particle)
   ```
 
 ---
@@ -67,8 +64,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Example:**
   ```lua
   -- Will unfreeze a particle, resuming its velocity and rotation
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  ParticleEmitter3D:UnfreezeParticle(particle)
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  VortexFXParticles:UnfreezeParticle(particle)
   ```
   
 ---
@@ -79,8 +76,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Example:**
   ```lua
   -- Will return the amount of particles currently active in the entire world
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  local particleCount = ParticleEmitter3D:GetActiveParticlesCount()
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  local particleCount = VortexFXParticles:GetActiveParticlesCount()
   ```
   
 ---
@@ -91,8 +88,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Example:**
   ```lua
   -- Will change the particles size to 5
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  ParticleEmitter3D:ChangeParticleProperty(particle, Size, 5)
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  VortexFXParticles:ChangeParticleProperty(particle, Size, 5)
   ```
   
 ---
@@ -102,8 +99,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Description:** The function can be called to destroy a certain particle.
 - **Example:**
   ```lua
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  ParticleEmitter3D:DestroyParticle(particle)
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  VortexFXParticles:DestroyParticle(particle)
   ```
   
 ---
@@ -114,8 +111,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Example:**
   ```lua
   -- Will set the position of the particle to 0, 10, 0
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  ParticleEmitter3D:SetParticlePosition(particle, Vector3.new(0, 10, 0))
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  VortexFXParticles:SetParticlePosition(particle, Vector3.new(0, 10, 0))
   ```
   
 ---
@@ -126,8 +123,8 @@ The system allows you to change and modify particles directly using a list of gi
 - **Example:**
   ```lua
   -- Will set the rotation/orientation of a particle to 45 degrees on the X and Z axis
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  ParticleEmitter3D:SetParticleOrientation(particle, Vector3.new(45, 0, 45))
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  VortexFXParticles:SetParticleOrientation(particle, Vector3.new(45, 0, 45))
   ```
   
 ---
@@ -138,10 +135,10 @@ The system allows you to change and modify particles directly using a list of gi
 - **Example:**
   ```lua
   -- Will reset the X, and Z rotation with a smooth fade in.
-  local ParticleEmitter3D = require(game:GetService("ReplicatedStorage").ParticleEmitter3D)
-  ParticleEmitter3D:ResetRotation(particle, true, false, true, true)
+  local VortexFXParticles = require(game:GetService("ReplicatedStorage").VortexFXParticles)
+  VortexFXParticles:ResetRotation(particle, true, false, true, true)
   ```
   
 ---
 
-These commands give you much more control over what you can do with particles, keep in mind it requires a particles PART, or the objects inside of workspace > 3DParticleCache while the game is running.
+These commands give you much more control over what you can do with particles, keep in mind it requires a particles PART, or the objects inside of workspace > VortexFXCache while the game is running.

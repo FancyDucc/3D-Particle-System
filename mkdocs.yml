@@ -1,4 +1,4 @@
-site_name: 3D Particle Emitter Documentation
+site_name: VortexFX Documentation
 site_url: https://fancyducc.github.io/3D-Particle-System/
 
 plugins:
@@ -87,6 +87,7 @@ nav:
       - Instability Properties: properties/instability.md
       - Particle Commands: properties/particle-commands.md
       - Function Properties: properties/event-functions.md
+      - Performance Properties: properties/performance-properties.md
       - Debug Properties: properties/debug-properties.md
   - Prerequisites: prerequisites.md
   - Free Templates: templatelist.md

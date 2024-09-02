@@ -17,10 +17,7 @@ The system has many other properties that you can use to have even more control 
       ReferenceObject = reference
   })
   ```
-<video width="600" controls>
-  <source src="../../media/ReferenceObject.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  
 ---
 
 ## **WindAffectsDrag**
@@ -33,11 +30,18 @@ The system has many other properties that you can use to have even more control 
       WindAffectsDrag = true
   })
   ```
+---
 
-<video width="600" controls>
-  <source src="../../media/WindAffectsDrag.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## **EmissionShape**
+
+- **Description:** Changes what shape particles can emit from the adornee
+- **Default:** `Enum.ParticleEmitterShape.Box`
+- **Example:**
+  ```lua
+  emitter:Create({ -- Particles will emit in a cylinder pattern
+      EmissionShape = Enum.ParticleEmitterShape.Cylinder
+  })
+  ```
 
 ---
 
@@ -51,11 +55,6 @@ The system has many other properties that you can use to have even more control 
       FaceVelocity = true
   })
   ```
-
-<video width="600" controls>
-  <source src="../../media/FaceVelocity.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ---
 
@@ -83,11 +82,6 @@ The system has many other properties that you can use to have even more control 
   })
   ```
 
-<video width="600" controls>
-  <source src="../../media/RandomizedColor.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 ---
 
 ## **CastShadow**
@@ -100,11 +94,6 @@ The system has many other properties that you can use to have even more control 
       CastShadow = true
   })
   ```
-
-<video width="600" controls>
-  <source src="../../media/CastShadow.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ---
 
@@ -127,8 +116,8 @@ The system has many other properties that you can use to have even more control 
 - **Example:**
   ```lua
   local ReplicatedStorage = game:GetService("ReplicatedStorage")
-  local ParticleEmitter3D = require(ReplicatedStorage:WaitForChild("ParticleEmitter3D"))
-  local emitter = ParticleEmitter3D:GetEmitterFromID("EmitterID1") -- Emitter will be set to whatever emitter already exists and is paired with "EmitterID1"
+  local VortexFXParticles = require(ReplicatedStorage:WaitForChild("VortexFXParticles"))
+  local emitter = VortexFXParticles:GetEmitterFromID("EmitterID1") -- Emitter will be set to whatever emitter already exists and is paired with "EmitterID1"
   ```
 
 ---
