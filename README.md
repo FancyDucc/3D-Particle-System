@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="docs/images/3DPS%20Logo.png" alt="Logo" width="600">
+  <img src="docs/images/images/VortexFXIcon.png" alt="Logo" width="600">
 </p>
 
 </a>
-<h1 align="center">3D Particle Emitter System for Roblox</h1>
+<h1 align="center">VortexFX - A 3D Particle system for ROBLOX</h1>
 <p align="center">
-<a align="center">Current Version: 1.0.3 - Gun</a>
+<a align="center">Current Version: 1.0.5 - Pure Performance</a>
 <br/>
 <br/>
 <a href="https://fancyducc.github.io/3D-Particle-System/getting-started/" target="_blank"><strong>See the official documentation</strong></a>
@@ -33,9 +33,9 @@ It is highly recommended to use the provided [documentation](https://fancyducc.g
 
 ## Installation
 
-1. Get the [3D Particle Emitter module](https://create.roblox.com/store/asset/89242445503292) from the Roblox library or download it from the [documentation](https://fancyducc.github.io/3D-Particle-System/installation/).
+1. Get [VortexFX](https://create.roblox.com/store/asset/89242445503292) from the Roblox library or download it from the [documentation](https://fancyducc.github.io/3D-Particle-System/installation/).
 2. Add the module into your game, preferably in `ReplicatedStorage`.
-3. Make sure you have the [PartCache module](https://devforum.roblox.com/t/objectcache-a-modern-blazing-fast-model-and-part-cache/3104112) installed as well.
+3. Make sure you have the [ObjectCache module](https://devforum.roblox.com/t/objectcache-a-modern-blazing-fast-model-and-part-cache/3104112) installed as well.
 
 ## Usage
 
@@ -49,24 +49,13 @@ emitter:Create({
 emitter:Start()
 ```
 
-## Useful and Key Properties
-
-- Basic: `Rate`, `Lifetime`, `Speed`, `Color`, `Size`, `Transparency`
-- Advanced: `Acceleration`, `Drag`, `SpreadAngle`, `FaceVelocity`
-- Audio: `AudioReactive`, `AudioInfluencedColor`, `AudioInfluencedSpeed`, `AudioInfluencedSize`
-- Light: `LightInfluenceEnabled`, `LightColorInfluence`, `LightBrightnessInfluence`
-- Collision: `EnableCollision`, `ParticlesAreSolid`, `OnCollision`
-- Trajectory: `TrajectorialVertices`, `TrajectorialSmoothening`
-- Instability: `Instability`, `InstabilityIntensity`
-- Events: `OnSpawn`, `OnDeath`, `HalfLife`, `ConstantFunction`
-
 ## Templates
 
 Pre-configured templates are available for quick setup:
 
 - Bouncy Balls
 - Fireflies
-- Falling Leaves
+- Lasers
 - Gun
 - Audio Orbs
 - Audio Waveform
