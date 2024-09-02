@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/images/VortexFXIcon.png" alt="Logo" width="600">
+  <img src="docs/images/VortexFXIcon.png" alt="Logo" width="600">
 </p>
 
 </a>
