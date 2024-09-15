@@ -1,0 +1,22 @@
+span.update-log {
+    background-color: #333 !important;
+    padding: 2px 4px !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+}
+
+span.update-log.added {
+    color: #4CAF50 !important;
+}
+
+span.update-log.removed {
+    color: #F44336 !important;
+}
+
+span.update-log.changed {
+    color: #FFC107 !important;
+}
+
+span.update-log.fixed {
+    color: #2196F3 !important;
+}
