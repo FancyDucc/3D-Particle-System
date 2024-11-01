@@ -1,7 +1,7 @@
 </div>
 <div align=center>
   
-*Current Version: 1.0.55 - Pure Performance*
+*Current Version: 1.0.6 - Groups*
 
 <img src="docs/images/VortexFXIcon.png" alt="Logo" width="800">
 
