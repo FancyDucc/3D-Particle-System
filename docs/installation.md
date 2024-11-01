@@ -8,7 +8,7 @@ Getting started with VortexFX is very easy and straightforward, so you can focus
 
 First, you’ll need to download the `.rbxm` file that contains the VortexFXParticles module.
 
-[Download the VortexFXParticles Module](downloads/VortexFXV1.0.5.rbxm)
+[Download the VortexFXParticles Module](downloads/VortexFXV1.0.6.rbxm)
 
 If you aren't comfortable with downloading the file or you are having troubles downloading it, a different method is to install from the Roblox creator hub, you can install the model from here: 
 

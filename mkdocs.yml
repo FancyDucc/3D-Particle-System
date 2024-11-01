@@ -85,8 +85,9 @@ nav:
       - Collision Properties: properties/collision.md
       - Trajectory Properties: properties/trajectory.md
       - Instability Properties: properties/instability.md
+      - Group Properties: properties/groups.md
       - Particle Commands: properties/particle-commands.md
-      - Function Properties: properties/event-functions.md
+      - Functions: properties/event-functions.md
       - Performance Properties: properties/performance-properties.md
       - Debug Properties: properties/debug-properties.md
   - Prerequisites: prerequisites.md

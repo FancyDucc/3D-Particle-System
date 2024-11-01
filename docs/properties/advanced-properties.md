@@ -207,6 +207,19 @@ The system has many other properties that you can use to have even more control 
 
 ---
 
+## **VelocityInheritor**
+
+- **Description:** What instance the particles take velocity from, singular instances only.
+- **Default:** `nil`
+- **Example:**
+  ```lua
+  emitter:Create({
+      VelocityInheritor = game.Workspace.VelocityCauser -- Particles inherit the velocity from this object
+  })
+  ```
+
+---
+
 ## **KeepOriginalTransparencies**
 
 - **Description:** Determines if all transparency related parts inside a model being emitted remains how it was when the model is first added.
@@ -214,7 +227,7 @@ The system has many other properties that you can use to have even more control 
 - **Example:**
   ```lua
   emitter:Create({
-      KeepOriginalTransparencies = true
+      KeepOriginalTransparencies = true -- Original transparencies are kept from the original model
   })
   ```
 
@@ -227,7 +240,7 @@ The system has many other properties that you can use to have even more control 
 - **Example:**
   ```lua
   emitter:Create({
-      KeepOriginalColors = true
+      KeepOriginalColors = true -- Original colors are kept from the original model
   })
   ```
 
@@ -240,7 +253,136 @@ The system has many other properties that you can use to have even more control 
 - **Example:**
   ```lua
   emitter:Create({
-      KeepOriginalMaterials = true
+      KeepOriginalMaterials = true -- Original materials are kept from the original model
+  })
+  ```
+
+---
+
+## **Attractor**
+
+- **Description:** A Table of or a single instance that pulls particles in, think of the attractor as the positive side of a magnet and the particles metal fragments.
+- **Default:** `nil`
+- **Example:**
+  ```lua
+  emitter:Create({
+      Attractor = game.Workspace.Attractor -- This object will pull particles in
+  })
+  ```
+  OR
+  ```lua
+  emitter:Create({
+      Attractor = {game.Workspace.Attractor1, game.Workspace.Attractor2, game.Workspace.Attractor3} -- These objects will pull particles in
+  })
+  ```
+
+---
+
+## **Repulsor**
+
+- **Description:** A Table of or a single instance that pushes particles away, think of the repulsor as the positive side of a magnet and the particles another positive sided magnet.
+- **Default:** `nil`
+- **Example:**
+   ```lua
+  emitter:Create({
+      Repulsor = game.Workspace.Repulsor -- This object will push particles away
+  })
+  ```
+  OR
+  ```lua
+  emitter:Create({
+      Repulsor = {game.Workspace.Repulsor1, game.Workspace.Repulsor2, game.Workspace.Repulsor3} -- These objects will push particles away
+  })
+  ```
+
+---
+
+## **AttractorRange**
+
+- **Description:** The range at which the attractor starts pulling particles.
+- **Default:** `40`
+- **Example:**
+  ```lua
+  emitter:Create({
+      AttractorRange = 100 -- A particle will start being effected when the attractor is within 100 studs of a particle
+  })
+  ```
+
+---
+
+## **AttractorStyle**
+
+- **Description:** The graph style of the attractor.
+- **Default:** `Enum.EasingStyle.Linear`
+- **Example:**
+  ```lua
+  emitter:Create({
+      AttractorStyle = Enum.EasingStyle.Exponential -- The attractor will have an exponential amount of pull on the particles, close = a lot of pull, far = very little pull
+  })
+  ```
+
+---
+
+## **AttractorIntensity**
+
+- **Description:** How intense the pull that particles go under, higher = more pull, lower = less pull.
+- **Default:** `10`
+- **Example:**
+  ```lua
+  emitter:Create({
+      AttractorIntensity = 25 -- The particles will be pulled enough to look like a normal magnet
+  })
+  ```
+
+---
+
+## **RepulsorRange**
+
+- **Description:** The range at which the repulsor starts pushing particles.
+- **Default:** `40`
+- **Example:**
+  ```lua
+  emitter:Create({
+      RepulsorRange = 100 -- A particle will start being effected when the repulsor is within 100 studs of a particle
+  })
+  ```
+
+---
+
+## **RepulsorStyle**
+
+- **Description:** The graph style of the repulsor.
+- **Default:** `Enum.EasingStyle.Linear`
+- **Example:**
+  ```lua
+  emitter:Create({
+      RepulsorStyle = Enum.EasingStyle.Exponential -- The attractor will have an exponential amount of push on the particles, close = a lot of push, far = very little push
+  })
+  ```
+
+---
+
+## **RepulsorIntensity**
+
+- **Description:** How intense the push that particles go under, higher = more push, lower = less push.
+- **Default:** `10`
+- **Example:**
+  ```lua
+  emitter:Create({
+      RepulsorIntensity = 50 -- The particles will be pulled enough to look like 2 magnets facing eachother
+  })
+  ```
+
+---
+
+## **CollisionGroup**
+
+- **Description:** The collision group of particles.
+- **Default:** `"Default"`
+- **Example:**
+  ```lua
+  emitter:Create({
+      CollisionGroup = "Particles"  -- Particles will only collide with objects the collision group "Particles" will have set to collision.
   })
   ```
 
@@ -258,7 +400,6 @@ The system has many other properties that you can use to have even more control 
   ```
 
 ---
-
 
 ## **IsShapeMesh (Deprecated)**
 !!! danger "Deprecated, use `ReferenceObject`"

@@ -96,4 +96,38 @@ There **will not** be a Creator Hub link for every older version however, as Rob
 - <span class="update-log added">Added Free Template</span> Lasers
 
 #### Downloads
-- **[V1.0.5 Module](downloads/VortexFXV1.0.5.rbxm)**
+- **[V1.0.5 Module](downloads/OldModules/VortexFXV1.0.5.rbxm)**
+
+## Version 1.0.6 - *Groups*
+#### Changes:
+- <span class="update-log added">Added Property</span> Grouped
+- <span class="update-log added">Added Property</span> GroupAmount
+- <span class="update-log added">Added Property</span> ParticlesPerGroup
+- <span class="update-log added">Added Property</span> GroupBehavior
+- <span class="update-log added">Added Property</span> GroupRotationBehavior
+- <span class="update-log added">Added Property</span> GroupBehaviorOnHeartDeath
+- <span class="update-log added">Added Property</span> ScatterPower
+- <span class="update-log added">Added Property</span> AvoidDistance
+- <span class="update-log added">Added Property</span> ClusterDistance
+- <span class="update-log added">Added Property</span> GroupWalkExtents
+- <span class="update-log added">Added Property</span> GroupWalkAggression
+- <span class="update-log added">Added Property</span> OneToOneOffset
+- <span class="update-log added">Added Property</span> GroupKillDelay
+- <span class="update-log added">Added Property</span> GroupOrbitRange
+- <span class="update-log added">Added Property</span> GroupOrbitAxis
+- <span class="update-log added">Added Property</span> GroupOrbitSpeed
+- <span class="update-log added">Added Property</span> GroupOrbitSmoothing
+- <span class="update-log added">Added Property</span> Attractor
+- <span class="update-log added">Added Property</span> Repulsor
+- <span class="update-log added">Added Property</span> AttractorRange
+- <span class="update-log added">Added Property</span> AttractorIntensity
+- <span class="update-log added">Added Property</span> AttractorStyle
+- <span class="update-log added">Added Property</span> RepulsorRange
+- <span class="update-log added">Added Property</span> RepulsorIntensity
+- <span class="update-log added">Added Property</span> RepulsorStyle
+- <span class="update-log added">Added Property</span> CollisionGroup
+- <span class="update-log added">Added Property</span> VelocityInheritor
+- <span class="update-log added">Added New Page</span> Group Properties
+
+#### Downloads
+- **[V1.0.6 Module](downloads/VortexFXV1.0.6.rbxm)**

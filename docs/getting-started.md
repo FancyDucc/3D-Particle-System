@@ -1,6 +1,6 @@
 # VortexFX Documentation
 
-**Current Version: 1.0.5 - Pure Performance**
+**Current Version: 1.0.6 - Groups**
 
 ---
 
