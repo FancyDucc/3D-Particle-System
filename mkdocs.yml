@@ -39,15 +39,6 @@ theme:
         icon: material/lightbulb
         name: Toggle Light Mode
 
-    # light
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: deep purple
-      toggle:
-        icon: material/lightbulb-outline
-        name: Toggle Dark Mode
-
   font:
     code: Roboto Mono
 
@@ -92,6 +83,5 @@ nav:
       - Debug Properties: properties/debug-properties.md
   - Prerequisites: prerequisites.md
   - Free Templates: templatelist.md
-  - Report an Issue: reportbugrequest.md
   - Update Log: modulechangelog.md
   - License: customprovisionlicense.md

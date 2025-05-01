@@ -130,4 +130,12 @@ There **will not** be a Creator Hub link for every older version however, as Rob
 - <span class="update-log added">Added New Page</span> Group Properties
 
 #### Downloads
-- **[V1.0.6 Module](downloads/VortexFXV1.0.6.rbxm)**
+- **[V1.0.6 Module](downloads/OldModules/VortexFXV1.0.6.rbxm)**
+
+## Version 1.0.65 - *Small Fix*
+#### Changes:
+- <span class="update-log fixed">Fixed</span> Velocity Inheritance can now reverse to have negative velocity
+- <span class="update-log fixed">Fixed</span> 0 Rate causes emission to divide by 0.
+
+#### Downloads
+- **[V1.0.65 Module](downloads/VortexFXV1.0.65.rbxm)**
