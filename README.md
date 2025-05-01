@@ -1,7 +1,7 @@
 </div>
 <div align=center>
   
-*Current Version: 1.0.6 - Groups*
+*Current Version: 1.0.65 - Small Fix*
 
 <img src="docs/images/VortexFXIcon.png" alt="Logo" width="800">
 
@@ -20,7 +20,7 @@ You can change every single property to your hearts content, as each property ha
 VortexFX is a 3D Particle system that is subjectively better than the other 3D particle systems you'll find around in the DevForum.
 
 ### **Model Emission**: 
-VortexFX is completely compatible with emitting Models and MeshParts, every single property should be fully working with Models and MeshParts, if not, **please** let me know here or using [the report feature in the documentation.](https://fancyducc.github.io/3D-Particle-System/reportbugrequest/#report-an-issue-or-request-a-feature)
+VortexFX is completely compatible with emitting Models and MeshParts, every single property should be fully working with Models and MeshParts, if not, **please** let me know here.
 
 ### **Collision Detection**: 
 Particles don't need to just float through everything. They can bounce off surfaces, avoid obstacles, or even react to players and the environment. Imagine fireflies moving around players or debris realistically bouncing off the ground.
@@ -88,7 +88,7 @@ The things you can use this system for are limitless, it just matters what your 
 A: I've spent hours, hours, and a few more hours optimizing this system as much as I could without making it look bad, there are a few spikes here and there when lots of particles, but the only time you'll be using hundreds of particles is quite rare.
 
 # That's all folks
-This page will continue to expand with more features, properties, Q&A, and much more the longer it exists, I'll try to respond to every request and issue in this post, however if you really want a guaranteed response, [write a report in the documentation.](https://fancyducc.github.io/3D-Particle-System/reportbugrequest/#report-an-issue-or-request-a-feature)
+This page will continue to expand with more features, properties, Q&A, and much more the longer it exists, I'll try to respond to every request and issue in this post.
 
 ## *License*
 
